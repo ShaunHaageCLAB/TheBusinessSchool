@@ -1,1 +1,1 @@
-# Vega
+# The Business School
