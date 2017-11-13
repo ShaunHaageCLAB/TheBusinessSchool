@@ -1,0 +1,28 @@
+// Sharepoint theme overrides
+// ----------------------------------------------------------------
+.main-content {
+	float: none;
+	width: auto;
+}
+.ms-belltown-anonspacer {
+	height: auto;
+}
+#s4-workspace {
+	max-width: none;
+	width: auto;
+	padding: 0;
+	overflow: inherit;
+}
+#ms-belltown-table {
+	padding: 0;
+	width: auto;
+}
+
+.ms-table {
+	display: block;
+}
+
+body {
+	overflow: auto;
+}
+

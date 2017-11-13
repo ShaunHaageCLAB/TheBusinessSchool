@@ -4,7 +4,12 @@ var BS = {
     },  
     init : function() { 
 
-        var $cache = {};
+        var $cache = {
+
+		};
+
+
+		$('.js-slideshow-homepage-intro').slick();
 
         $("#btn_Search").click(function () {
             var Term = $("#txt_Search").val();

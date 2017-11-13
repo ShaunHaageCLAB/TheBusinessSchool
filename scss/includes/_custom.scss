@@ -1,3 +1,5 @@
+
+
 .tab-pane li {
     font-weight: 600;
     letter-spacing: 1px;
@@ -13,14 +15,14 @@ small {
 }
 
 .topbar {
-    background-color: #000000;
+    background-color: $black;
     padding-bottom: 1px;
     min-height: 46px;
     margin-top: -1px;
 }
 
 .dotted-container {
-    /*border-bottom: 5px dotted #ce161e;*/
+    /*border-bottom: 5px dotted $red;*/
 }
 
 .container.RelatedProgrammes {
@@ -48,27 +50,27 @@ small {
 
 .lime-text,
 .green-text {
-    color: #c1c841;
+    color: $brand-primary;
     font-weight: bold;
 }
 
 .yellow-text {
-    color: #fecc00;
+    color: $yellow;
     font-weight: bold;
 }
 
 .grey-text {
-    color: #acacac;
+    color: $gray;
     font-weight: bold;
 }
 
 .red-text {
-    color: #ce161e;
+    color: $red;
     font-weight: bold;
 }
 
 .white-text {
-    color: #ffffff;
+    color: $white;
     font-size: 16px;
 }
 
@@ -139,7 +141,7 @@ small {
 /* Button */
 
 .explore-button {
-    color: #ffffff;
+    color: $white;
     font-weight: bold;
     padding: 10px;
     text-align: center;
@@ -148,33 +150,33 @@ small {
 }
 
 .button {
-    color: #ffffff;
+    color: $white;
     text-align: center;
     font-weight: bolder;
 }
 
 .button a {
-    color: #ffffff;
+    color: $white;
     padding: 10px;
     display: block;
 }
-
+ 
 .button-green {
-    background-color: #c1c841;
+    background-color: $brand-primary;
     border-radius: 0px;
-    color: #FFF !important;
+    color: $white !important;
 }
 
 .button-yellow {
-    background-color: #fecc00;
+    background-color: $yellow;
 }
 
 .button-red {
-    background-color: #ce161e;
+    background-color: $red;
 }
 
 .button-orange {
-    background-color: #f26522;
+    background-color: $orange;
 }
 
 
@@ -201,19 +203,19 @@ small {
 }
 
 .programme-border-green {
-    border: 3px solid #c1c841;
+    border: 3px solid $brand-primary;
 }
 
 .programme-border-yellow {
-    border: 3px solid #fecc00;
+    border: 3px solid $yellow;
 }
 
 .programme-border-orange {
-    border: 3px solid #f26522;
+    border: 3px solid $orange;
 }
 
 .programme-border-red {
-    border: 3px solid #ce161e;
+    border: 3px solid $red;
 }
 
 .programme-copy {
@@ -235,11 +237,11 @@ small {
 }
 
 .learning {
-    border-bottom: 4px solid #c1c841;
+    border-bottom: 4px solid $brand-primary;
 }
 
 .part-time {
-    border-bottom: 4px solid #fecc00;
+    border-bottom: 4px solid $yellow;
 }
 
 .corporate {
@@ -247,7 +249,7 @@ small {
 }
 
 .starting {
-    border-bottom: 4px solid #f26522;
+    border-bottom: 4px solid $orange;
 }
 
 .choose {
@@ -259,7 +261,7 @@ small {
 .choose-content {
     width: 65%;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: $white;
     padding: 10px 20px 20px;
     position: relative;
     top: 23%;
@@ -299,7 +301,7 @@ small {
     /*
     width: 1169px;
     height: 330px;*/
-    background-color: #ffffff;
+    background-color: $white;
     margin: 0 auto;
 }
 
@@ -348,14 +350,14 @@ small {
 }
 
 .ft-container {
-    background-color: #ffffff;
+    background-color: $white;
     margin: 0 auto;
     margin-top: 5%;
 }
 
 .ft-container h3 {
     font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
-    color: #c1c841;
+    color: $brand-primary;
     text-align: left;
     text-transform: uppercase;
     font-size: 16px;
@@ -444,7 +446,7 @@ input {
 .ribbon span {
     font-size: 10px;
     font-weight: bold;
-    color: #FFF;
+    color: $white;
     text-transform: uppercase;
     text-align: center;
     line-height: 20px;
@@ -485,54 +487,6 @@ input {
 }
 
 
-/* Slider */
-
-.slider .slide-content {
-    width: 1032px;
-    background-color: #c1c841;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    top: 225px;
-}
-
-.slider .slide-content h2 {
-    font-weight: bold;
-}
-
-.slider .slide-content p {
-    text-align: center;
-    font-weight: bold;
-    margin: 0 0 25px;
-}
-
-.slider .slide-content .medium-text {
-    font-size: 18px;
-}
-
-.enquire {
-    width: 15%;
-    color: #ffffff;
-    background-color: #000000;
-    margin: 0 auto;
-    position: relative;
-    top: 204px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.enquire span {
-    display: block;
-    padding: 8px;
-}
-
-.enquire a {
-    color: #ffffff;
-    display: block;
-    padding: 8px;
-}
 
 
 /* Footer */
@@ -542,18 +496,18 @@ input {
 }
 
 .orange-text {
-    color: #f26522;
+    color: $orange;
     font-weight: bold;
 }
 
 .navigationbar {
-    /*border-bottom: 5px dotted #ce161e;*/
+    /*border-bottom: 5px dotted $red;*/
     /*min-height: 171px;*/
 }
 
 a.CampusMenuLink {
-    background-color: #fff !important;
-    color: #acacac !important;
+    background-color: $white !important;
+    color: $gray !important;
     padding: 0 !important;
 }
 
@@ -575,7 +529,7 @@ a.CampusMenuLink {
 
 .button.ProgrammeFeaturedHoverButton {
     background-color: #000;
-    color: #fff;
+    color: $white;
     width: 50%;
     margin: 0 auto;
 }
@@ -595,7 +549,7 @@ a.CampusMenuLink {
 }
 
 p.ProgrammeFeaturedHoverContent {
-    color: #fff;
+    color: $white;
     min-height: 144px;
     padding: 12px;
 }
@@ -611,26 +565,26 @@ p.ProgrammeFeaturedHoverHead {
 /*green */
 
 .panel.all-programmes.programme-border-green:hover {
-    background-color: #c1c841;
-    color: #fff;
+    background-color: $brand-primary;
+    color: $white;
 }
 
 .panel.all-programmes.programme-border-green:hover .panel-body .lime-text,
 .panel.all-programmes.programme-border-green:hover .panel-body .dl-horizontal dt .grey-text {
-    color: #fff;
+    color: $white;
 }
 
 .panel.all-programmes.programme-border-green:hover .panel-footer .button-green {
-    background-color: #fff;
-    color: #c1c841;
+    background-color: $white;
+    color: $brand-primary;
 }
 
 .panel.all-programmes.programme-border-green:hover .panel-footer .button-green a {
-    color: #c1c841;
+    color: $brand-primary;
 }
 
 .programme-border-green .ProgrammeFeaturedHover {
-    background-color: #c1c841;
+    background-color: $brand-primary;
     float: left;
     width: 100%;
 }
@@ -639,78 +593,78 @@ p.ProgrammeFeaturedHoverHead {
 /*yellow */
 
 .panel.all-programmes.programme-border-yellow:hover {
-    background-color: #fecc00;
-    color: #fff;
+    background-color: $yellow;
+    color: $white;
 }
 
 .panel.all-programmes.programme-border-yellow:hover .panel-body .yellow-text,
 .panel.all-programmes.programme-border-yellow:hover .panel-body .dl-horizontal dt .grey-text {
-    color: #fff;
+    color: $white;
 }
 
 .panel.all-programmes.programme-border-yellow:hover .panel-footer .button-yellow {
-    background-color: #fff;
-    color: #fecc00;
+    background-color: $white;
+    color: $yellow;
 }
 
 .panel.all-programmes.programme-border-yellow:hover .panel-footer .button-yellow a {
-    color: #fecc00;
+    color: $yellow;
 }
 
 .programme-border-yellow .ProgrammeFeaturedHover {
-    background-color: #fecc00;
+    background-color: $yellow;
 }
 
 
 /*red */
 
 .panel.all-programmes.programme-border-red:hover {
-    background-color: #ce161e;
-    color: #fff;
+    background-color: $red;
+    color: $white;
 }
 
 .panel.all-programmes.programme-border-red:hover .panel-body .red-text,
 .panel.all-programmes.programme-border-red:hover .panel-body .dl-horizontal dt .grey-text {
-    color: #fff;
+    color: $white;
 }
 
 .panel.all-programmes.programme-border-red:hover .panel-footer .button-red {
-    background-color: #fff;
-    color: #ce161e;
+    background-color: $white;
+    color: $red;
 }
 
 .panel.all-programmes.programme-border-red:hover .panel-footer .button-red a {
-    color: #ce161e;
+    color: $red;
 }
 
 .programme-border-red .ProgrammeFeaturedHover {
-    background-color: #ce161e;
+    background-color: $red;
 }
 
 
 /*orange */
 
 .panel.all-programmes.programme-border-orange:hover {
-    background-color: #f26522;
-    color: #fff;
+    background-color: $orange;
+    color: $white;
 }
 
 .panel.all-programmes.programme-border-orange:hover .panel-body .orange-text,
 .panel.all-programmes.programme-border-orange:hover .panel-body .dl-horizontal dt .grey-text {
-    color: #fff;
+    color: $white;
 }
 
 .panel.all-programmes.programme-border-orange:hover .panel-footer .button-orange {
-    background-color: #fff;
-    color: #f26522;
+    background-color: $white;
+    color: $orange;
 }
 
 .panel.all-programmes.programme-border-orange:hover .panel-footer .button-orange a {
-    color: #f26522;
+    color: $orange;
 }
 
 .programme-border-orange .ProgrammeFeaturedHover {
-    background-color: #f26522;
+    background-color: $orange;
 }
 
 
@@ -732,7 +686,7 @@ dl.dl-horizontal {
 /* about page tab nav */
 
 .topContent .col-md-9.tab-content span {
-    color: #acacac;
+    color: $gray;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
@@ -742,7 +696,7 @@ dl.dl-horizontal {
     position: absolute;
     right: 0;
     top: 22px;
-    color: #fff;
+    color: $white;
     font-weight: bold;
     border-radius: 0;
     text-transform: uppercase;
@@ -765,7 +719,7 @@ dl.dl-horizontal {
     border-radius: 0;
     border: none;
     text-transform: uppercase;
-    color: #fff;
+    color: $white;
     margin: 5px 0;
     float: right;
 }
@@ -780,7 +734,7 @@ dl.dl-horizontal {
 .nav-tabs.aboutPage li {
     border: 2px solid #B2B2A9;
     border: none;
-    color: #fff;
+    color: $white;
     font-size: 18px;
     outline: none;
     text-transform: uppercase;
@@ -810,7 +764,7 @@ dl.dl-horizontal {
 }
 
 .nav-tabs.aboutPage li a {
-    color: #fff;
+    color: $white;
     text-align: center;
 }
 
@@ -822,14 +776,14 @@ dl.dl-horizontal {
 .nav-tabs.aboutPage li:hover {
     background: #B2B2A9;
     border: none;
-    color: #fff;
+    color: $white;
     margin: 0 0 2px 2px;
 }
 
 .nav-tabs.aboutPage li.active {
-    background: #fff;
+    background: $white;
     border: 2px solid #B2B2A9;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $white;
 }
 
 .nav-tabs.aboutPage li.active a {
@@ -864,7 +818,7 @@ dl.dl-horizontal {
 .nav-tabs.programmesPage li {
     border: 2px solid #B2B2A9;
     border: none;
-    color: #fff;
+    color: $white;
     font-size: 18px;
     outline: none;
     text-transform: uppercase;
@@ -894,7 +848,7 @@ dl.dl-horizontal {
 }
 
 .nav-tabs.programmesPage li a {
-    color: #fff;
+    color: $white;
     text-align: center;
     display: block;
     width: 100%;
@@ -909,14 +863,14 @@ dl.dl-horizontal {
 .nav-tabs.programmesPage li:hover {
     background: #B2B2A9;
     border: none;
-    color: #fff;
+    color: $white;
     margin: 0 0 2px 2px;
 }
 
 .nav-tabs.programmesPage li.active {
-    background: #fff;
+    background: $white;
     border: 2px solid #B2B2A9;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $white;
 }
 
 .nav-tabs.programmesPage li.active a {
@@ -934,7 +888,7 @@ dl.dl-horizontal {
 }
 
 .tab-content.programmesPage .tab-pane span {
-    color: #f26522;
+    color: $orange;
     font-size: 18px;
 }
 
@@ -961,7 +915,7 @@ dl.dl-horizontal {
         margin: 1px 0;
     }
     .nav-tabs.programmesPage li.active {
-        border-bottom: 2px solid #c1c841;
+        border-bottom: 2px solid $brand-primary;
     }
 }
 
@@ -1011,7 +965,7 @@ span.ProgramCommingSoonMenu {
 }
 
 .courseDates span {
-    color: #acacac;
+    color: $gray;
 }
 
 .courseDates .select2-container {
@@ -1028,7 +982,7 @@ span.ProgramCommingSoonMenu {
     width: 49%!important;
     border-radius: inherit!important;
     border: none;
-    color: #fff;
+    color: $white;
     min-height: 45px;
 }
 
@@ -1039,7 +993,7 @@ span.ProgramCommingSoonMenu {
     line-height: 1.42857143;
     text-align: center;
     white-space: nowrap;
-    color: #fff!important;
+    color: $white!important;
 }
 
 @media (min-width: 992px) {
@@ -1088,11 +1042,11 @@ span.ProgramCommingSoonMenu {
 }
 
 .accordionNavProgs.collapsed {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $white;
     padding: 5px 20px;
     margin-top: 0px;
     width: 100%;
-    color: #fff;
+    color: $white;
     background: #000;
     transition: all ease-in-out 300ms;
 }
@@ -1136,7 +1090,7 @@ span.ProgramCommingSoonMenu {
 .registerContent p {}
 
 .registerContent a {
-    color: #f26522;
+    color: $orange;
 }
 
 .registerContent ul li {
@@ -1169,7 +1123,7 @@ span.ProgramCommingSoonMenu {
 .aboutBrochures .col-md-3 .btn {
     border-radius: 0;
     width: 100%;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
     margin-top: 5px;
     transition: all ease-in-out 300ms;
@@ -1194,7 +1148,7 @@ span.ProgramCommingSoonMenu {
 
 .error404 h2,
 .error500 h2 {
-    color: #fff;
+    color: $white;
     font-size: 357px;
     margin: 0 0 -60px;
 }
@@ -1209,7 +1163,7 @@ span.ProgramCommingSoonMenu {
 
 .error404 p,
 .error500 p {
-    color: #fff;
+    color: $white;
     font-size: 25px;
     text-transform: uppercase;
 }
@@ -1226,7 +1180,7 @@ span.ProgramCommingSoonMenu {
     margin: 0 auto;
     border: 2px solid #c80b0e;
     padding: 0 19px;
-    background: #fff;
+    background: $white;
     position: relative;
     min-width: 320px;
     width: 30%;
@@ -1261,7 +1215,7 @@ span.ProgramCommingSoonMenu {
     width: 100%;
     margin-bottom: 10px;
     border: 1px solid #c80b0e;
-    background: #fff;
+    background: $white;
 }
 
 .enquirePanel .closebtn,
@@ -1279,7 +1233,7 @@ span.ProgramCommingSoonMenu {
 }
 
 .enquirePanel .submit_Btn {
-    color: #fff;
+    color: $white;
     background: #c80b0e;
     text-align: center;
     padding: 10px;
@@ -1287,7 +1241,7 @@ span.ProgramCommingSoonMenu {
 }
 
 .enquirePanel .warningIcon {
-    color: #f26522;
+    color: $orange;
 }
 
 .enquirePanel .enqIntro {
@@ -1303,18 +1257,18 @@ span.ProgramCommingSoonMenu {
 
 #enquireModal .select2-selection {
     border-radius: 0;
-    color: #fff;
+    color: $white;
     background: #000;
     margin-bottom: 10px;
     border: none;
 }
 
 #enquireModal .select2-selection .select2-selection__rendered {
-    color: #fff;
+    color: $white;
 }
 
 #enquireModal .errorsEnquire {
-    color: #f26522;
+    color: $orange;
 }
 
 #enquireModal .successTakeover,
@@ -1339,7 +1293,7 @@ span.ProgramCommingSoonMenu {
 #enquireModal .successTakeover p,
 #enquireModal .failureTakeover p,
 #enquireModal .loadingTakeover p {
-    color: #fff;
+    color: $white;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
@@ -1350,20 +1304,20 @@ span.ProgramCommingSoonMenu {
 #enquireModal .successTakeover #enquireModal .closebtn,
 #enquireModal .failureTakeover .closebtn,
 #enquireModal .loadingTakeover .closebtn {
-    color: #fff;
+    color: $white;
 }
 
 #enquireModal .failureTakeover {
-    background: #ce161e;
+    background: $red;
 }
 
 #enquireModal .loadingTakeover {
-    background: #f26522;
+    background: $orange;
 }
 
 #enquireModal .ctaClose {
     display: inline-block;
-    background: #fff;
+    background: $white;
     font-weight: bold;
     color: #c80b0e;
     padding: 5px 20px;
@@ -1387,7 +1341,7 @@ span.ProgramCommingSoonMenu {
     margin: 0 auto;
     border: 2px solid #c80b0e;
     padding: 0 19px;
-    background: #fff;
+    background: $white;
     position: relative;
     min-width: 320px;
     width: 30%;
@@ -1422,7 +1376,7 @@ span.ProgramCommingSoonMenu {
     width: 100%;
     margin-bottom: 10px;
     border: 1px solid #c80b0e;
-    background: #fff;
+    background: $white;
 }
 
 .revisonModalPanel .closebtn,
@@ -1440,7 +1394,7 @@ span.ProgramCommingSoonMenu {
 }
 
 .revisonModalPanel .submit_Btn {
-    color: #fff;
+    color: $white;
     background: #c80b0e;
     text-align: center;
     padding: 10px;
@@ -1448,7 +1402,7 @@ span.ProgramCommingSoonMenu {
 }
 
 .revisonModalPanel .warningIcon {
-    color: #f26522;
+    color: $orange;
 }
 
 .revisonModalPanel .enqIntro {
@@ -1464,18 +1418,18 @@ span.ProgramCommingSoonMenu {
 
 #BookingForm .select2-selection {
     border-radius: 0;
-    color: #fff;
+    color: $white;
     background: #000;
     margin-bottom: 10px;
     border: none;
 }
 
 #BookingForm .select2-selection .select2-selection__rendered {
-    color: #fff;
+    color: $white;
 }
 
 #BookingForm .errorsEnquire {
-    color: #f26522;
+    color: $orange;
 }
 
 #BookingForm .successTakeover,
@@ -1500,7 +1454,7 @@ span.ProgramCommingSoonMenu {
 #BookingForm .successTakeover p,
 #BookingForm .failureTakeover p,
 #BookingForm .loadingTakeover p {
-    color: #fff;
+    color: $white;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
@@ -1511,20 +1465,20 @@ span.ProgramCommingSoonMenu {
 #BookingForm .successTakeover .closebtn,
 #BookingForm .failureTakeover .closebtn,
 #BookingForm .loadingTakeover .closebtn {
-    color: #fff;
+    color: $white;
 }
 
 #BookingForm .failureTakeover {
-    background: #ce161e;
+    background: $red;
 }
 
 #BookingForm .loadingTakeover {
-    background: #f26522;
+    background: $orange;
 }
 
 #BookingForm .ctaClose {
     display: inline-block;
-    background: #fff;
+    background: $white;
     font-weight: bold;
     color: #c80b0e;
     padding: 5px 20px;
@@ -1632,8 +1586,8 @@ span.ProgramCommingSoonMenu {
 
 .myvcPage .studentLoginPanel .col-md-10 a {
     padding: 5px 15px;
-    background: #ce161e;
-    color: #fff;
+    background: $red;
+    color: $white;
     margin-right: 5px;
 }
 
@@ -1675,13 +1629,13 @@ span.ProgramCommingSoonMenu {
 
 #connectMYVC .MyVCResetPassword {
     border-radius: 0;
-    border: 2px solid #ce161e;
+    border: 2px solid $red;
 }
 
 #connectMYVC .MyVCResetPassword .modal-body a {
     display: inline;
     background: none;
-    color: #ce161e;
+    color: $red;
     padding: 0;
     text-shadow: none;
     margin: 0;
@@ -1689,19 +1643,19 @@ span.ProgramCommingSoonMenu {
 
 #connectMYVC .MyVCResetPassword .btn.btn-default {
     border: none;
-    background: #ce161e;
-    color: #fff;
+    background: $red;
+    color: $white;
     border-radius: 0;
     padding: 5px 70px;
 }
 
 #connectMYVC .MyVCResetPassword button.close {
-    color: #ce161e;
+    color: $red;
 }
 
 #connectMYVC .MyVCResetPassword .modal-header {
-    border-bottom: 1px solid #ce161e;
-    color: #ce161e;
+    border-bottom: 1px solid $red;
+    color: $red;
 }
 
 #connectMYVC .MyVCResetPassword .modal-footer {
@@ -1737,7 +1691,7 @@ span.ProgramCommingSoonMenu {
 }
 
 .campusWrapper h3 {
-    color: #fecc00;
+    color: $yellow;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 144%;
     font-weight: bold;
@@ -1747,7 +1701,7 @@ span.ProgramCommingSoonMenu {
 
 .campusWrapper h3.CampusMapAndDirections {
     clear: both;
-    color: #f26522;
+    color: $orange;
     display: block;
     margin-top: 20px;
 }
@@ -1764,7 +1718,7 @@ span.ProgramCommingSoonMenu {
 }
 
 .campusWrapper h3.CampusBankDetails {
-    color: #ce161e;
+    color: $red;
     margin-top: 20px;
 }
 
@@ -2013,7 +1967,7 @@ button:focus {
 }
 
 .ContactDetailHeader {
-    color: #acacac;
+    color: $gray;
 }
 
 .ContactDetail {
@@ -2021,7 +1975,7 @@ button:focus {
 }
 
 .ContactHeader:hover {
-    color: #acacac;
+    color: $gray;
 }
 
 
@@ -2145,7 +2099,7 @@ a.nav-search:hover {
 }
 
 #btn_Search {
-    color: #fecc00;
+    color: $yellow;
     transition: all ease-in-out 300ms;
 }
 
@@ -2159,14 +2113,14 @@ a.nav-search:hover {
 
 #NotFound {
     font-weight: bold;
-    color: #ce161e;
+    color: $red;
     margin-top: 18px;
     font-size: 22px;
 }
 
 .HeaderSearch {
     margin-top: 45px;
-    color: #ce161e;
+    color: $red;
     font-size: 17px;
     font-weight: bold;
 }
@@ -2191,7 +2145,7 @@ a.nav-search:hover {
 }
 
 .SearchList li a {
-    color: #acacac;
+    color: $gray;
     font-weight: 600;
 }
 
@@ -2229,15 +2183,15 @@ a.nav-search:hover {
 
 #articlesListing .select2-selection {
     border-radius: 0;
-    color: #fff;
-    background: #83c546;
+    color: $white;
+    background: $green;
     margin-bottom: 10px;
     border: none;
     height: auto;
 }
 
 #articlesListing .select2-selection .select2-selection__rendered {
-    color: #fff;
+    color: $white;
     padding: 7px;
 }
 
@@ -2246,7 +2200,7 @@ a.nav-search:hover {
 }
 
 #articlesListing .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: #fff transparent transparent transparent;
+    border-color: $white transparent transparent transparent;
 }
 
 
@@ -2406,7 +2360,7 @@ a.nav-search:hover {
 
 .ChatBar button,
 .ChatBar input[type=submit] {
-    color: #fff;
+    color: $white;
     cursor: pointer;
     background: #000;
     font-size: 16px;
@@ -2432,7 +2386,7 @@ a.nav-search:hover {
 }
 
 .ChatBar .links li a {
-    color: #fff;
+    color: $white;
     display: block;
     font-size: 20px;
     height: 45px;
@@ -2444,7 +2398,7 @@ a.nav-search:hover {
 .ChatBar .CallChat {
     background-color: #e9e9e9;
     text-align: center;
-    color: #fff;
+    color: $white;
     font-weight: bold;
     line-height: 33px;
     padding: 5px 0;
@@ -2509,7 +2463,7 @@ a.nav-search:hover {
 .submitBtn {
     border: none;
     background: #000;
-    color: #fff;
+    color: $white;
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
@@ -2522,7 +2476,7 @@ a.nav-search:hover {
 }
 
 .submitBtn:hover {
-    color: #fff;
+    color: $white;
 }
 
 .region-footer input,
@@ -2534,7 +2488,7 @@ a.nav-search:hover {
     top: 0;
     width: 266px;
     color: #000;
-    background: #fff;
+    background: $white;
     margin-left: 5px;
 }
 
@@ -2573,7 +2527,7 @@ button#contact img {
 }
 
 button#contact:hover {
-    color: #fff;
+    color: $white;
 }
 
 button#contact {
@@ -2585,7 +2539,7 @@ button#contact {
 
 div#livechat-compact-container {
     margin-bottom: 5px;
-    border-left: #fff solid 2px!important;
+    border-left: $white solid 2px!important;
 }
 
 .tab-content.programmesPage {
@@ -2699,13 +2653,13 @@ a.button-yellow.btn.ProgrammeTabFooterControl {
 }
 
 .template2 .button {
-    color: #ffffff;
+    color: $white;
     text-align: center;
     font-weight: bolder;
 }
 
 .template2 .button a {
-    color: #000000;
+    color: $black;
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -2749,7 +2703,7 @@ a.button-yellow.btn.ProgrammeTabFooterControl {
 
 .template1A a {
     text-decoration: underline;
-    color: #000000;
+    color: $black;
 }
 
 .template1A .sml_image {
@@ -2817,7 +2771,7 @@ a.button-yellow.btn.ProgrammeTabFooterControl {
 }
 
 .template1A blockquote cite {
-    color: #000000;
+    color: $black;
 }
 
 .template1A_final_thoughts {
@@ -2845,13 +2799,13 @@ a.button-yellow.btn.ProgrammeTabFooterControl {
 }
 
 .template1A .button {
-    color: #ffffff;
+    color: $white;
     text-align: center;
     font-weight: bolder;
 }
 
 .template1A .button a {
-    color: #000000;
+    color: $black;
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -2959,13 +2913,13 @@ article {
 }
 
 .template4 .button {
-    color: #ffffff;
+    color: $white;
     text-align: center;
     font-weight: bolder;
 }
 
 .template4 .button a {
-    color: #000000;
+    color: $black;
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -3012,7 +2966,7 @@ article {
 }
 
 .template4_new p a {
-    color: #000000;
+    color: $black;
     text-decoration: underline;
 }
 
@@ -3083,14 +3037,14 @@ article {
 }
 
 .template4_new .button {
-    color: #ffffff;
+    color: $white;
     text-align: center;
     font-weight: bolder;
     overflow: auto;
 }
 
 .template4_new .button a {
-    color: #000000;
+    color: $black;
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -3167,7 +3121,7 @@ article {
 .pop-up-form select {
     border: none;
     width: 23%;
-    background: #fff;
+    background: $white;
     color: #000 !important;
     /*     margin-top: 4%; */
     position: relative;
@@ -3181,7 +3135,7 @@ article {
 
 .pop-up-form .submitCourseBtn {
     background: #AFC42C;
-    color: #fff;
+    color: $white;
     width: 23%;
     padding: 10px 27px 10px 27px
 }
@@ -3226,8 +3180,8 @@ article {
 .pop-message .call-me-back {
     text-transform: uppercase;
     width: 35%;
-    color: #ffffff;
-    background-color: #000000;
+    color: $white;
+    background-color: $black;
     margin: 0 auto;
     position: relative;
     text-align: center;
@@ -3240,8 +3194,8 @@ article {
 .pop-message .enquire-pop {
     text-transform: uppercase;
     width: 35%;
-    color: #ffffff;
-    background-color: #000000;
+    color: $white;
+    background-color: $black;
     margin: 0 auto;
     position: absolute;
     text-align: center;
@@ -3269,7 +3223,7 @@ article {
 @media(max-width:510px) {
     .pop-up-form .submitCourseBtn {
         background: #AFC42C;
-        color: #fff;
+        color: $white;
         width: 35%;
         padding: 10px;
         margin-left: 28%;
@@ -3314,7 +3268,7 @@ article {
 }
 
 .Reg-button {
-    color: #fff;
+    color: $white;
     border-radius: 0;
     font-weight: bold;
 }
@@ -3324,7 +3278,7 @@ article {
 }
 
 .Reg-button-top {
-    color: #fff!important;
+    color: $white!important;
     border-radius: 0;
     margin-left: 10px;
 }

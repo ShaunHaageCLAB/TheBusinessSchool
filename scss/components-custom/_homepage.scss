@@ -1,0 +1,41 @@
+// Homepage
+// ---------------------------------------------
+
+
+
+// Homepage intro slideshow
+// --------------------------------------------------
+.slideshow__homepage {
+
+}
+
+.slideshow__homepage .slide-container {
+	background-repeat: no-repeat;
+	background-position: center center;
+	// background-size: cover;
+	padding-top: 10vh;
+	text-align: center;	
+	height: 50vh;
+	max-height: 600px;
+}
+	.slide5 {	background-image: url("../images/banners/40192029_TBS_Early_Reg_Webslider_2000x800_1.jpg");	}
+	.slide6 {	background-image: url("../images/banners/the-business-school.jpg");	}
+	.slide7 {	background-image: url("../images/banners/business-courses.jpg");	}
+	.slide8 {	background-image: url("../images/banners/part-time-business-courses.jpg");	}
+
+
+.slide-content {}
+
+	.slide-text {
+		padding: 20px;
+		background-color: $brand-primary;
+	}
+
+	.slide-text p {
+		font-weight: bold;
+		margin-bottom: 25px;
+	}
+
+	.slide-text .medium-text {
+		font-size: 18px;
+	}

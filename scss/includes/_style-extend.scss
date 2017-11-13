@@ -32,28 +32,28 @@
 }
 
 .panel-feature-green {
-    background-color: #c1c841;
+    background-color: $brand-primary;
 }
 
 .panel-feature-yellow {
-    background-color: #fecc00;
+    background-color: $yellow;
 }
 
 .panel-feature-red {
-    background-color: #ce161e;
+    background-color: $red;
 }
 
 .panel-feature-orange {
-    background-color: #f26522;
+    background-color: $orange;
 }
 
 .dropdown-full .list-group a {
-    color: #83c546;
+    color: $green;
 }
 
 .navbar.navbar-tba .navbar-nav .dropdown-full .group-list a {
-    background-color: #ffffff;
-    color: #83c546;
+    background-color: $white;
+    color: $green;
     font-weight: bold;
     text-transform: capitalize;
 }
@@ -129,7 +129,7 @@
 }
 
 .panel-bg-yellow {
-    background: #fecc00;
+    background: $yellow;
     color: white;
 }
 
@@ -138,7 +138,7 @@
 }
 
 .panel-border-yellow.panel-bg-yellow h4 {
-    color: #FFF;
+    color: $white;
 }
 
 .panel-grid .grey-text {
@@ -160,35 +160,35 @@
 /* Panel colours */
 
 .panel-border-red {
-    border: 5px solid #ce161e;
+    border: 5px solid $red;
 }
 
 .panel-border-red h4 {
-    color: #ce161e;
+    color: $red;
 }
 
 .panel-border-yellow {
-    border: 5px solid #fecc00;
+    border: 5px solid $yellow;
 }
 
 .panel-border-yellow h4 {
-    color: #fecc00;
+    color: $yellow;
 }
 
 .panel-border-green {
-    border: 5px solid #83c546;
+    border: 5px solid $green;
 }
 
 .panel-border-green h4 {
-    color: #83c546;
+    color: $green;
 }
 
 .panel-border-orange {
-    border: 5px solid #f26522;
+    border: 5px solid $orange;
 }
 
 .panel-border-orange h4 {
-    color: #f26522;
+    color: $orange;
 }
 
 .panel-border-red,
@@ -203,36 +203,36 @@
 .panel-border-yellow:hover,
 .panel-border-yellow:hover h4,
 .panel-border-yellow:hover span {
-    background-color: #fecc00;
-    color: #fff;
+    background-color: $yellow;
+    color: $white;
 }
 
 .panel-border-red:hover,
 .panel-border-red:hover h4,
 .panel-border-red:hover span {
-    background-color: #ce161e;
-    color: #fff;
+    background-color: $red;
+    color: $white;
 }
 
 .panel-border-green:hover,
 .panel-border-green:hover h4,
 .panel-border-green:hover span {
-    background-color: #83c546;
-    color: #fff;
+    background-color: $green;
+    color: $white;
 }
 
 .panel-border-orange:hover,
 .panel-border-orange:hover h4,
 .panel-border-orange:hover span {
-    background-color: #f26522;
-    color: #fff;
+    background-color: $orange;
+    color: $white;
 }
 
 
 /* buttons */
 
 .btn-red {
-    background: #ce161e none repeat scroll 0 0;
+    background: $red none repeat scroll 0 0;
     border: rad;
     border-radius: 0px;
     width: 150px;
@@ -280,7 +280,7 @@
 }
 
 .modal-backdrop.modal-backdrop-fullscreen {
-    background: #ffffff;
+    background: $white;
 }
 
 .modal-backdrop.modal-backdrop-fullscreen.in {

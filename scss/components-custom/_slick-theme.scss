@@ -43,7 +43,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
     .slick-loading & {
-        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+        background: $white slick-image-url("ajax-loader.gif") center center no-repeat;
     }
 }
 
@@ -62,7 +62,8 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-prev,
 .slick-next {
-    position: absolute;
+	position: absolute;
+	z-index: $zindex-slideshow-arrows;
     display: block;
     height: 20px;
     width: 20px;
@@ -71,14 +72,14 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
+    top: 50%;    
     transform: translate(0, -50%);
     padding: 0;
     border: none;
-    outline: none;
-    &:hover, &:focus {
+	outline: none;
+	
+	&:hover, 
+	&:focus {
         outline: none;
         background: transparent;
         color: transparent;
@@ -101,10 +102,10 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    left: 25px;
     [dir="rtl"] & {
         left: auto;
-        right: -25px;
+        right: 25px;
     }
     &:before {
         content: $slick-prev-character;
@@ -115,9 +116,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: 25px;
     [dir="rtl"] & {
-        left: -25px;
+        left: 25px;
         right: auto;
     }
     &:before {
@@ -136,13 +137,14 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: 25px;
     list-style: none;
     display: block;
     text-align: center;
     padding: 0;
     margin: 0;
-    width: 100%;
+	width: 100%;
+	
     li {
         position: relative;
         display: inline-block;
@@ -150,7 +152,8 @@ $slick-opacity-not-active: 0.25 !default;
         width: 20px;
         margin: 0 5px;
         padding: 0;
-        cursor: pointer;
+		cursor: pointer;
+		
         button {
             border: 0;
             background: transparent;
@@ -168,7 +171,8 @@ $slick-opacity-not-active: 0.25 !default;
                 &:before {
                     opacity: $slick-opacity-on-hover;
                 }
-            }
+			}
+			
             &:before {
                 position: absolute;
                 top: 0;

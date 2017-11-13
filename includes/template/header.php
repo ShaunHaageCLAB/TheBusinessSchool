@@ -1,21 +1,7 @@
-<header class="site-header" id="site-header">	
-
+<header class="site-header" id="site-header" style="display: none">	
 
 	<nav class="navbar-wrapper" id="site-navigation">
-
-		<div class="navbar navbar-primary" id="primary-navigation">
-			<div class="container">
-				<ul class="navbar-nav level-1-list">
-					<li class="is-active"><a  class="level-1-link" href="#">Enquire</a></li>
-					<li class="visible-md-block visible-lg-block"><a  class="level-1-link" href="#">Apply</a></li>
-					<li class="visible-md-block visible-lg-block"><a  class="level-1-link" href="#">Register</a></li>
-					<li><a  class="level-1-link" href="#">My Vega</a></li>
-				</ul>
-			</div>
-		</div>
-
-		
-		<div class="navbar navbar-secondary" id="secondary-navigation" data-menu='1'>
+		<div class="navbar navbar-primary" id="primary-navigation" data-menu='1'>
 			<div class="container">
 				<ul class="navbar-nav level-1-list">
 					<li class="level-1-item">
