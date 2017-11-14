@@ -43,6 +43,53 @@
 
 // Programmes
 // ---------------------------------------------
+.has-border-bottom {
+	border-bottom: solid 5px;
+}
+.box-border {
+	border: solid 5px;
+}
+
+.border-green {
+	border-color: $lime;
+}
+.border-red {
+	border-color: $red;
+}
+.border-orange {
+	border-color: $orange;
+}
+
+
+.hover-box {
+	position: relative;
+
+	.hover-box-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $lime;
+		color: $white;
+
+	}
+}
+
+.hover-box:hover  {
+	.hover-box-content {
+		max-height: 500px;
+		opacity: 1;
+		padding: 20px;		
+	}
+
+}
+.hover-box-content {
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+}
+
 
 
 
@@ -55,16 +102,11 @@
 } 
 
 .section__choose-content {
-    width: 65%;
-    margin: 0 auto;
-    background-color: $white;
-    padding: 20px;
+
 }
 
 @media (min-width: 1300px) {
-    .section__choose-content{
-        width: 50%;
-    }
+
 }
 
 

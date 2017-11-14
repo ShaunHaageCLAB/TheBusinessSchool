@@ -5,88 +5,88 @@
 
 		<div class="row baseline-sm">
 
-			<div class="col-md-6 col-lg-6">
+			<div class="hover-box / col-sm-6">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-sm-6">
 						<img src="images/12.jpg">						
 					</div>
-					<div class="col-lg-6">
+					
+					<div class="col-sm-6">
 						<h3 class="h4-alt">
 							IIE Project Management
 						</h3>
 
-						<p class="lime-text">
+						<p class="text-green">
 							SHORT LEARNING PROGRAMMES
 						</p>
 		 	
 						<p class="baseline-none">
-							<span class="grey-text">STARTS:</span>
+							<span class="text-grey">STARTS:</span>
 							26 FEBRUARY 2018
 						</p>
 						<p>	
-							<span class="grey-text">COST:</span>
+							<span class="text-grey">COST:</span>
 							R 10 600,00 *
 						</p>
 						
-						
-						<a class="btn btn-primary btn-block" href="/programmes/short-learning/project-management">VIEW MORE >></a>						
+					
 					</div>
 				</div>
 
-				<div class="ProgrammeFeaturedHover" hidden>
-					<h3 class="ProgrammeFeaturedHoverHead">
+				<div class="hover-box-content">
+					<h3 class="h4-alt text-center">
 						IIE Project Management
 					</h3>
-					<p class="ProgrammeFeaturedHoverContent">
+					<p class="">
 						Project Management has become a critical operational tool for any manager who has to meet tight deadlines with limited resources.
 					</p>
-					
-					<a class="btn btn-black btn-block" href="/programmes/short-learning/project-management">VIEW MORE >></a>					
+					<p class="text-center">
+						<a class="btn btn-black" href="/programmes/short-learning/project-management">VIEW MORE >></a>					
+					</p>
 				</div>
 			</div>
 
 
 
-			<div class="col-md-6 col-lg-6">
+			<div class="hover-box / col-sm-6">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-sm-6">
 						<img src="images/16.jpg">
 					</div>
 
-					<div class="col-lg-6">
+					<div class="col-sm-6">
 						<h3 class="h4-alt">
 							IIE Supply Chain & Logistics Management
 						</h3>
 						
-						<p class="lime-text">
+						<p class="text-green">
 							SHORT LEARNING PROGRAMMES
 						</p>						
 						<p class="baseline-none">
-							<span class="grey-text">STARTS:</span>
+							<span class="text-grey">STARTS:</span>
 							12 MARCH 2018
 						</p>
 						<p>						
-							<span class="grey-text">COST:</span>
+							<span class="text-grey">COST:</span>
 							R 12 500,00 *
 						</p>
-						
-						
-						<a class="btn btn-primary btn-block" href="/programmes/short-learning/supply-chain-and-logistics-management">VIEW MORE >></a>
+					
 										
 					</div>
 				</div>
 
 
-				<div class="ProgrammeFeaturedHover" hidden>
-					<p class="ProgrammeFeaturedHoverHead">
+				<div class="hover-box-content">
+					<h3 class="h4-alt text-center">
 						IIE Supply Chain & Logistics Management
-					</p>
-					<p class="ProgrammeFeaturedHoverContent">
+					</h3>
+					<p class="">
 						Managing and securing the movement of goods as well as the essential control thereof from supplier to customer has become
 						an ever increasing need within companies across the globe.
 					</p>
-					
-					<a class="btn btn-black btn-block" href="/programmes/short-learning/supply-chain-and-logistics-management">VIEW MORE >></a>					
+					<p class="text-center">
+						<a class="btn btn-black" href="/programmes/short-learning/supply-chain-and-logistics-management">VIEW MORE >></a>					
+					</p>
 				</div>
 
 			</div>

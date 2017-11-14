@@ -138,7 +138,8 @@
     @include clearfix;
 }
 
-.center-block {
+.center-block, 
+.align-center {
     @include center-block;
 }
 

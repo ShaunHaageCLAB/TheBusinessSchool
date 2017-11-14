@@ -10,6 +10,8 @@ var BS = {
 
 
 		$('.js-slideshow-homepage-intro').slick();
+		
+		$('.js-slideshow-testimonials').slick(); 
 
         $("#btn_Search").click(function () {
             var Term = $("#txt_Search").val();
@@ -86,27 +88,6 @@ var BS = {
             $(".btn-red").css({ "z-index": "5000" });
         });
         
-
-
-        // Fixa navbar ao ultrapassa-lo
-        var navbar = $('#navbar-main'),
-            distance = navbar.offset().top,
-            $window = $(window);
-
-        $window.scroll(function () {
-            if ($window.scrollTop() >= distance) {
-                navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
-                $("body").css("padding-top", "70px");
-                $(".dropdown-full .dropdown-menu").css({ "height": $(window).height() - 70, "overflow": "auto" });
-
-
-            } else {
-                navbar.removeClass('navbar-fixed-top');
-                $("body").css("padding-top", "0px");
-
-            }
-        });
-
 
         var maxTime = 2000; // 2 seconds
         var time = 0;

@@ -10,11 +10,11 @@
 
 
 		<div class="row baseline-xs box-padded box-white">
-			<figure class="col-md-6">
+			<figure class="col-sm-6 text-center">
 				<img src="images/HR-management-courses-thumb.jpg">
 			</figure>
 			
-			<article class="col-md-6">
+			<article class="col-sm-6">
 				<h2 class="h3-alt">Build your brand with Marketing Management courses</h2>
 				
 				<small>The Business School
@@ -38,7 +38,7 @@
 		
 		<div class="row box-padded box-white">
 		
-			<article class="col-md-6">
+			<article class="col-sm-6">
 				<h2 class="h3-alt">Managing a business environment</h2>
 				
 				<small>The Business School
@@ -58,7 +58,7 @@
 				</p>
 			</article>
 
-			<figure class="col-md-6">
+			<figure class="col-sm-6 text-center">
 				<img src="images/paralegal-courses-nov16.jpg">
 			</figure>
 

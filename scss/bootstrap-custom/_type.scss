@@ -1,4 +1,3 @@
-//
 // Typography
 // --------------------------------------------------
 
@@ -58,10 +57,11 @@ h6, .h6, .h6-alt { font-size: $font-size-h6; }
 // -------------------------
 
 p {
-  margin: 0 0 ($line-height-computed / 2);
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 30px;
+  	margin: 0 0 ($line-height-computed / 2);
+	line-height: 1.8;
+  	// font-weight: 600;
+//   letter-spacing: 1px;
+//   line-height: 30px;
 
 }
 
@@ -115,66 +115,64 @@ mark,
 }
 
 
-.lime-text,
-.green-text {
+.text-body {
+    color: $text-color;
+}
+
+.text-green {
     color: $brand-primary;
     font-weight: bold;
 }
 
-.yellow-text {
+.text-yellow {
     color: $yellow;
     font-weight: bold;
 }
 
-.grey-text {
+.text-grey {
     color: $gray;
     font-weight: bold;
 }
 
-.red-text {
+.text-red {
     color: $red;
     font-weight: bold;
 }
 
-.white-text {
-    color: $white;
-    font-size: 16px;
-}
-
-
-.strong {
+.text-white {
+	color: $white;
 	font-weight: bold;
 }
 
+.strong,
+.text-strong {
+	font-weight: bold;
+}
+
+.text-decoration-none {
+	text-decoration: none;
+	&:hover {		
+		text-decoration: none;
+	}
+}
+
+
 
 @include text-emphasis-variant('.text-primary', $brand-primary);
-
 @include text-emphasis-variant('.text-success', $state-success-text);
-
 @include text-emphasis-variant('.text-info', $state-info-text);
-
 @include text-emphasis-variant('.text-warning', $state-warning-text);
-
 @include text-emphasis-variant('.text-danger', $state-danger-text);
 
 // Contextual backgrounds
 // For now we'll leave these alongside the text classes until v4 when we can
 // safely shift things around (per SemVer rules).
-.bg-primary {
-  // Given the contrast here, this is the only class to have its color inverted
-  // automatically.
-  color: $white;
-}
+
 @include bg-variant('.bg-primary', $brand-primary);
-
 @include bg-variant('.bg-success', $state-success-bg);
-
 @include bg-variant('.bg-info', $state-info-bg);
-
 @include bg-variant('.bg-warning', $state-warning-bg);
-
 @include bg-variant('.bg-danger', $state-danger-bg);
-
 
 // Page header
 // -------------------------
