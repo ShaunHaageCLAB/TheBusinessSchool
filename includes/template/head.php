@@ -1,6 +1,3 @@
-<script src="https://use.typekit.net/ktg3xzv.js"></script>
-<script>try { Typekit.load({ asynac: true }); } catch (e) { }</script>
-
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
 <!-- Facebook Pixel Code -->

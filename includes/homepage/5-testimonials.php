@@ -1,6 +1,6 @@
 <div class="clear dottedHor"></div>
 
-<div class=" paddedTestimonials">
+<section class="section__testimonials / paddedTestimonials homepage__section">
 	<div class="testimonials">
 
 		<div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
@@ -80,6 +80,6 @@
 
 		</div>
 	</div>
-</div>
+</section>
 
 <div class="clear dottedHor"></div>

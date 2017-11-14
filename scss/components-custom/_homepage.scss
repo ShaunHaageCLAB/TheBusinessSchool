@@ -1,15 +1,14 @@
-// Homepage
-// ---------------------------------------------
-
-
+.homepage__section {
+	padding: $grid-gutter-width 0;
+}
 
 // Homepage intro slideshow
 // --------------------------------------------------
-.slideshow__homepage {
+.section__slideshow-intro {
 
 }
 
-.slideshow__homepage .slide-container {
+.section__slideshow-intro .slideshow__container  {
 	background-repeat: no-repeat;
 	background-position: center center;
 	// background-size: cover;
@@ -24,18 +23,55 @@
 	.slide8 {	background-image: url("../images/banners/part-time-business-courses.jpg");	}
 
 
-.slide-content {}
+.slideshow__content {}
 
-	.slide-text {
+	.slideshow__text {
 		padding: 20px;
 		background-color: $brand-primary;
 	}
 
-	.slide-text p {
+	.slideshow__text p {
 		font-weight: bold;
 		margin-bottom: 25px;
 	}
 
-	.slide-text .medium-text {
+	.slideshow__text .medium-text {
 		font-size: 18px;
 	}
+
+ 
+
+// Programmes
+// ---------------------------------------------
+
+
+
+// Why Choose The Business School
+// ---------------------------------------------
+.section__choose {
+    min-height: 500px;
+	background: url("../images/choose-bg.jpg") no-repeat center center;
+	padding-top: 130px;
+} 
+
+.section__choose-content {
+    width: 65%;
+    margin: 0 auto;
+    background-color: $white;
+    padding: 20px;
+}
+
+@media (min-width: 1300px) {
+    .section__choose-content{
+        width: 50%;
+    }
+}
+
+
+
+// News
+// ---------------------------------------------
+.section__latest-news {
+	background: url('../img/news-bg.jpg') no-repeat center center;
+	background-size: cover;
+}

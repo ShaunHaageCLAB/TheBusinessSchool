@@ -1,6 +1,23 @@
 //
 // Utility classes
 // --------------------------------------------------
+.dot-col {
+    background: url("../img/bdrRedDottedVert.png") right top repeat-y;
+    min-height: 156px;
+}
+.clear.dottedHor {
+    height: 7px;
+    background: url("../img/bdrRedDotted.png") 0 0 repeat-x;
+    margin: -3px 0 -4px;
+    position: relative;
+    z-index: 1
+}
+
+.dottedVer {
+    background: url("../img/bdrRedDottedVert.png") right top repeat-y;
+}
+
+
 // Lists as menus
 // -------------------------
 .menu,
@@ -101,15 +118,19 @@
     }
 }
 
-.has-background {
-    background-color: $brand-primary;
-    color: $white;
+
+.box-white {
+	background: $white;
 }
 
-.has-background-alt {
-    background-color: $gray-darker;
-    color: $white;
+.box-padded {
+	padding: 15px;
+
+	&.row {
+		padding: 15px 5px;
+	}
 }
+
 
 // Floats
 // -------------------------

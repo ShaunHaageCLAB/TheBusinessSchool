@@ -29,17 +29,7 @@ small {
     padding-bottom: 30px;
 }
 
-.clear.dottedHor {
-    height: 7px;
-    background: url("../img/bdrRedDotted.png") 0 0 repeat-x;
-    margin: -3px 0 -4px;
-    position: relative;
-    z-index: 1
-}
 
-.dottedVer {
-    background: url("../img/bdrRedDottedVert.png") right top repeat-y;
-}
 
 .tbs-template {
     padding: 40px 15px;
@@ -47,32 +37,6 @@ small {
 
 
 /* Text Colours */
-
-.lime-text,
-.green-text {
-    color: $brand-primary;
-    font-weight: bold;
-}
-
-.yellow-text {
-    color: $yellow;
-    font-weight: bold;
-}
-
-.grey-text {
-    color: $gray;
-    font-weight: bold;
-}
-
-.red-text {
-    color: $red;
-    font-weight: bold;
-}
-
-.white-text {
-    color: $white;
-    font-size: 16px;
-}
 
 
 /* Header */
@@ -140,44 +104,44 @@ small {
 
 /* Button */
 
-.explore-button {
-    color: $white;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    width: 540px;
-    margin: 0 auto;
-}
+// .explore-button {
+//     color: $white;
+//     font-weight: bold;
+//     padding: 10px;
+//     text-align: center;
+//     width: 540px;
+//     margin: 0 auto;
+// }
 
-.button {
-    color: $white;
-    text-align: center;
-    font-weight: bolder;
-}
+// .button {
+//     color: $white;
+//     text-align: center;
+//     font-weight: bolder;
+// }
 
-.button a {
-    color: $white;
-    padding: 10px;
-    display: block;
-}
+// .button a {
+//     color: $white;
+//     padding: 10px;
+//     display: block;
+// }
  
-.button-green {
-    background-color: $brand-primary;
-    border-radius: 0px;
-    color: $white !important;
-}
+// .button-green {
+//     background-color: $brand-primary;
+//     border-radius: 0px;
+//     color: $white !important;
+// }
 
-.button-yellow {
-    background-color: $yellow;
-}
+// .button-yellow {
+//     background-color: $yellow;
+// }
 
-.button-red {
-    background-color: $red;
-}
+// .button-red {
+//     background-color: $red;
+// }
 
-.button-orange {
-    background-color: $orange;
-}
+// .button-orange {
+//     background-color: $orange;
+// }
 
 
 /* Content */
@@ -224,17 +188,6 @@ small {
     padding-top: 10px;
 }
 
-.programmes p {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.programmes .container .col-xs-6.col-sm-3 img,
-.programmes .container .col-md-3 img {
-    width: 94%;
-    display: block;
-    margin: 0 auto;
-}
 
 .learning {
     border-bottom: 4px solid $brand-primary;
@@ -252,36 +205,6 @@ small {
     border-bottom: 4px solid $orange;
 }
 
-.choose {
-    width: 100%;
-    height: 500px;
-    background-image: url("../images/choose-bg.jpg");
-}
-
-.choose-content {
-    width: 65%;
-    margin: 0 auto;
-    background-color: $white;
-    padding: 10px 20px 20px;
-    position: relative;
-    top: 23%;
-}
-
-@media (min-width: 1300px) {
-    .choose-content {
-        width: 50%;
-    }
-}
-
-.choose-content p {
-    text-align: center;
-    font-size: 13px;
-}
-
-.dot-col {
-    background: url("../img/bdrRedDottedVert.png") right top repeat-y;
-    min-height: 156px;
-}
 
 .choose-content .dot-col sup {
     top: -0.16em;
@@ -521,42 +444,7 @@ a.CampusMenuLink {
 }
 
 
-/* Programme Featured */
 
-.ProgrammeIntro {
-    padding-right: 10px;
-}
-
-.button.ProgrammeFeaturedHoverButton {
-    background-color: #000;
-    color: $white;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.featured-programmes .ProgrammeFeaturedHover {
-    display: none;
-    text-align: center;
-    min-height: 280px;
-}
-
-.featured-programmes:hover .ProgrammeIntro {
-    display: none;
-}
-
-.featured-programmes:hover .ProgrammeFeaturedHover {
-    display: block;
-}
-
-p.ProgrammeFeaturedHoverContent {
-    color: $white;
-    min-height: 144px;
-    padding: 12px;
-}
-
-p.ProgrammeFeaturedHoverHead {
-    padding-top: 15px;
-}
 
 
 /*Program Details Hover */
@@ -2305,14 +2193,7 @@ a.nav-search:hover {
     }
 }
 
-@media (min-width: 992px) {
-    .featured-programmes .all-programme-button {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        width: 46%;
-    }
-}
+
 
 @media (max-width: 927px) {
     .navbar.navbar-tba .navbar-nav {
