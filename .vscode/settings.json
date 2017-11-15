@@ -4,6 +4,7 @@
         "**/css-source": true,
         "**/lib": true,
         "**/scripts": true,
+        "**/sharepoint": true,
         "**/scripts-source": true
     }
 }

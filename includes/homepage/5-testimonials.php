@@ -3,7 +3,7 @@
 <section class="section__testimonials / homepage__section">
 	<div class="container">
 
-		<h2 class="text-center">Testimonials</h2>
+		<h2 class="h1 text-center">Testimonials</h2>
 		<p class="text-center">What students past and current are saying.</p>
 
 		<div class="js-slideshow-testimonials / text-center">			

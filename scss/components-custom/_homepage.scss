@@ -1,119 +1,134 @@
+// Homepage sections
+// --------------------------------------------------
 .homepage__section {
-	padding: $grid-gutter-width 0;
+    padding: $grid-gutter-width 0;
 }
+
+@media (max-width: $screen-xs-max) {
+    .homepage__section {
+        padding: $grid-gutter-width 0;
+    }
+}
+
 
 // Homepage intro slideshow
 // --------------------------------------------------
 .section__slideshow-intro {
+    $slideshow-height: 60vh;
+    background-color: $gray; 
+    overflow: hidden;
+    height: $slideshow-height;
 
+
+    .homepage_slideshow__slide {
+        background-repeat: no-repeat;
+        background-position: center center; // background-size: cover;
+        text-align: center;
+        height: $slideshow-height;
+
+        @media (max-width: $screen-xs-max) {
+            padding: $grid-gutter-width 0;
+        }
+    }
+
+    .homepage_slideshow__slide {
+        display: flex !important; // override styling from JS
+        align-items: center;
+    } 
 }
 
-.section__slideshow-intro .slideshow__container  {
-	background-repeat: no-repeat;
-	background-position: center center;
-	// background-size: cover;
-	padding-top: 10vh;
-	text-align: center;	
-	height: 50vh;
-	max-height: 600px;
+    .slideshow__text {
+        padding: 20px;
+        background-color: $brand-primary;
+        margin: 0 30px;
+    }
+
+
+    .slideshow__button-wrapper {
+        margin-top: -1.8rem;
+    }
+
+
+// Slide background only for tablet up
+@media (min-width: $screen-sm-min) {
+	.slide5 {
+		background-image: url("../images/banners/homepage_slide_01.jpg");
+	}
+	.slide6 {
+		background-image: url("../images/banners/homepage_slide_02.jpg");
+	}
+	.slide7 {
+		background-image: url("../images/banners/homepage_slide_03.jpg");
+	}	
+	.slide8 {
+		background-image: url("../images/banners/homepage_slide_04.jpg");
+	}
 }
-	.slide5 {	background-image: url("../images/banners/40192029_TBS_Early_Reg_Webslider_2000x800_1.jpg");	}
-	.slide6 {	background-image: url("../images/banners/the-business-school.jpg");	}
-	.slide7 {	background-image: url("../images/banners/business-courses.jpg");	}
-	.slide8 {	background-image: url("../images/banners/part-time-business-courses.jpg");	}
 
-
-.slideshow__content {}
-
-	.slideshow__text {
-		padding: 20px;
-		background-color: $brand-primary;
-	}
-
-	.slideshow__text p {
-		font-weight: bold;
-		margin-bottom: 25px;
-	}
-
-	.slideshow__text .medium-text {
-		font-size: 18px;
-	}
-
- 
 
 // Programmes
 // ---------------------------------------------
-.has-border-bottom {
-	border-bottom: solid 5px;
-}
-.box-border {
-	border: solid 5px;
-}
-
-.border-green {
-	border-color: $lime;
-}
-.border-red {
-	border-color: $red;
-}
-.border-orange {
-	border-color: $orange;
-}
-
-
 .hover-box {
-	position: relative;
-
-	.hover-box-content {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: $lime;
-		color: $white;
-
-	}
+    position: relative;
+    .hover-box-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $lime;
+        color: $white;
+    }
 }
 
-.hover-box:hover  {
-	.hover-box-content {
-		max-height: 500px;
-		opacity: 1;
-		padding: 20px;		
-	}
-
+.hover-box:hover {
+    .hover-box-content {
+        max-height: 500px;
+        opacity: 1;
+        padding: 20px;
+    }
 }
+
 .hover-box-content {
-	max-height: 0;
-	overflow: hidden;
-	opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
 }
 
+@media (min-width: $screen-xs-max) {
 
+    // Why Choose The Business School
+    // ---------------------------------------------
+    .section__choose {
+        min-height: 500px;
+        background: url("../images/choose-bg.jpg") no-repeat center center;
+        padding-top: 130px;
+    }
+
+    // News
+    // ---------------------------------------------
+    .section__latest-news {
+        background: url('../img/news-bg.jpg') no-repeat center center;
+        background-size: cover;
+    }    
+}
 
 
 // Why Choose The Business School
 // ---------------------------------------------
-.section__choose {
-    min-height: 500px;
-	background: url("../images/choose-bg.jpg") no-repeat center center;
-	padding-top: 130px;
-} 
-
-.section__choose-content {
-
-}
-
-@media (min-width: 1300px) {
-
+@media (max-width: $screen-xs-max) {
+    .section__choose-columns {
+        .dot-col:nth-of-type(2) {
+            background-image: none;
+        }
+    }
 }
 
 
-
-// News
+// Testimonials
 // ---------------------------------------------
-.section__latest-news {
-	background: url('../img/news-bg.jpg') no-repeat center center;
-	background-size: cover;
+.js-slideshow-testimonials {
+    .slick-dots {
+        bottom: -25px;
+    }
 }

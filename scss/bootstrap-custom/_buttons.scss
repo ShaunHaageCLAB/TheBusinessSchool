@@ -1,11 +1,8 @@
-//
 // Buttons
 // --------------------------------------------------
 
 
 // Base styles
-// --------------------------------------------------
-
 .btn {
   display: inline-block;
   margin-bottom: 0; // For input.btn
@@ -17,7 +14,6 @@
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: none;
-  white-space: nowrap;
   font-weight: bold;
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
   @include user-select(none);

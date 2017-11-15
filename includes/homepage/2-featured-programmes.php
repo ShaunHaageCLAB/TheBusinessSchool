@@ -1,17 +1,17 @@
-<section class="section__featured-programmes / dotted-container homepage__section">
+<section class="section__featured-programmes / dotted-container">
 
 	<div class="container baseline-sm">
-		<h2 class="text-center">Featured Programmes</h2>
+		<h2 class="h1 text-center">Featured Programmes</h2>
 
 		<div class="row baseline-sm">
 
 			<div class="hover-box / col-sm-6">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-xs-3 col-sm-6">
 						<img src="images/12.jpg">						
 					</div>
 					
-					<div class="col-sm-6">
+					<div class="col-xs-9 col-sm-6">
 						<h3 class="h4-alt">
 							IIE Project Management
 						</h3>
@@ -41,7 +41,8 @@
 						Project Management has become a critical operational tool for any manager who has to meet tight deadlines with limited resources.
 					</p>
 					<p class="text-center">
-						<a class="btn btn-black" href="/programmes/short-learning/project-management">VIEW MORE >></a>					
+						<a class="btn btn-black" href="/programmes/short-learning/project-management">VIEW MORE 
+						<i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>					
 					</p>
 				</div>
 			</div>
@@ -50,13 +51,13 @@
 
 			<div class="hover-box / col-sm-6">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-xs-3 col-sm-6">
 						<img src="images/16.jpg">
 					</div>
 
-					<div class="col-sm-6">
+					<div class="col-xs-9 col-sm-6">
 						<h3 class="h4-alt">
-							IIE Supply Chain & Logistics Management
+							IIE Supply Chain &amp; Logistics Management
 						</h3>
 						
 						<p class="text-green">
@@ -85,7 +86,8 @@
 						an ever increasing need within companies across the globe.
 					</p>
 					<p class="text-center">
-						<a class="btn btn-black" href="/programmes/short-learning/supply-chain-and-logistics-management">VIEW MORE >></a>					
+						<a class="btn btn-black" href="/programmes/short-learning/supply-chain-and-logistics-management">VIEW MORE 
+						<i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>					
 					</p>
 				</div>
 
@@ -95,7 +97,8 @@
 
 
 		<a href="/programmes" class="btn btn-primary btn-block">
-			EXPLORE OUR FULL PROGRAMME OFFERING >>>
+			EXPLORE OUR FULL PROGRAMME OFFERING 
+				<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
 		</a>
 
 	</div>

@@ -1,8 +1,6 @@
 // Navbars
 // --------------------------------------------------
-.site-header {
-
-}
+.site-header {}
 
 .navbar-nav {
     >.is-active>a {
@@ -14,19 +12,8 @@
     }
 }
 
-.navbar-secondary,
-.navbar-primary {
-    .navbar-nav {
-
-        >li {
-            flex: 1 1 auto;
-        }
-    }
-}
-
 .level-1-link {
     text-transform: uppercase;
-    line-height: $navbar-height;
     font-weight: bold;
     display: block;
     text-align: center;
@@ -39,10 +26,4 @@
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-// Secondary navbar
-// ----------------------------------------------
-.navbar-secondary {
-
 }

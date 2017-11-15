@@ -10,13 +10,14 @@
 $slick-font-path: "../fonts/slick/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
+$slick-arrow-size: 30px !default;
 $slick-arrow-color: white !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: "\2190" !default;
 $slick-next-character: "\2192" !default;
 $slick-dot-character: "\2022" !default;
-$slick-dot-size: 6px !default;
+$slick-dot-size: 12px !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
@@ -65,8 +66,8 @@ $slick-opacity-not-active: 0.25 !default;
 	position: absolute;
 	z-index: $zindex-slideshow-arrows;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: $slick-arrow-size;
+    width: $slick-arrow-size;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
@@ -92,7 +93,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &:before {
         font-family: $slick-font-family;
-        font-size: 20px;
+        font-size: $slick-arrow-size;
         line-height: 1;
         color: $slick-arrow-color;
         opacity: $slick-opacity-default;
@@ -102,7 +103,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: 25px;
+    left: 15px;
     [dir="rtl"] & {
         left: auto;
         right: 25px;
@@ -116,7 +117,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: 25px;
+    right: 15px;
     [dir="rtl"] & {
         left: 25px;
         right: auto;

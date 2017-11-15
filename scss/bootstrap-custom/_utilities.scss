@@ -1,21 +1,5 @@
-//
 // Utility classes
 // --------------------------------------------------
-.dot-col {
-    background: url("../img/bdrRedDottedVert.png") right top repeat-y;
-    min-height: 156px;
-}
-.clear.dottedHor {
-    height: 7px;
-    background: url("../img/bdrRedDotted.png") 0 0 repeat-x;
-    margin: -3px 0 -4px;
-    position: relative;
-    z-index: 1
-}
-
-.dottedVer {
-    background: url("../img/bdrRedDottedVert.png") right top repeat-y;
-}
 
 
 // Lists as menus
@@ -193,9 +177,68 @@
 
 // Flexbox Utility
 // -------------------------
-.flex {
-    display: flex;
+@media (min-width: $screen-sm-min) {
+    .flex {
+        display: flex;
+    }
+    .flex-direction-column {
+        flex-direction: column;
+    }
+    .flex-first {
+        order: -1;
+    }
 }
+
+@media (max-width: $screen-xs-max) {
+    .xs-flex {
+        display: flex;
+    }
+    .xs-flex-direction-column {
+        flex-direction: column;
+    }
+    .xs-flex-first {
+        order: -1;
+    }
+}
+
+// Borders
+// -------------------------
+.has-border-bottom {
+    border-bottom: solid 5px;
+}
+
+.box-border {
+    border: solid 5px;
+}
+
+.border-green {
+    border-color: $lime;
+}
+
+.border-red {
+    border-color: $red;
+}
+
+.border-orange {
+    border-color: $orange;
+}
+
+.dot-col,
+.dottedVer  {
+    background: url("../img/bdrRedDottedVert.png") right top repeat-y;
+    min-height: 168px;
+}
+.dottedHor {
+    clear: both;
+    height: 7px;
+    background: url("../img/bdrRedDotted.png") 0 0 repeat-x;
+    margin: -3px 0 -4px;
+    position: relative;
+    z-index: 1
+}
+
+// Margins
+// -------------------------
 
 .baseline-none {
     margin-bottom: 0;
@@ -216,4 +259,23 @@
 
 .baseline-lg {
     margin-bottom: $grid-gutter-width*6;
+}
+
+@media (max-width: $screen-xs-max) {
+    .xs-baseline-xs,
+    .xs-baseline-grid {
+        margin-bottom: $grid-gutter-width;
+    }
+
+    .xs-baseline-sm {
+        margin-bottom: $grid-gutter-width*2;
+    }
+
+    .xs-baseline-md {
+        margin-bottom: $grid-gutter-width*4;
+    }
+
+    .xs-baseline-lg {
+        margin-bottom: $grid-gutter-width*6;
+    }
 }

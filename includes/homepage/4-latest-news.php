@@ -6,11 +6,11 @@
 			LATEST NEWS FOR YOU
 		</p>
 
-		<h2 class="text-center">Go ahead, boost your business career</h2>
+		<h2 class="h1 text-center">Go ahead, boost your business career</h2>
 
 
 		<div class="row baseline-xs box-padded box-white">
-			<figure class="col-sm-6 text-center">
+			<figure class="col-sm-6 text-center xs-baseline-xs">
 				<img src="images/HR-management-courses-thumb.jpg">
 			</figure>
 			
@@ -27,7 +27,7 @@
 
 				<p>
 					<a class="btn btn-red" href="/article/build-your-brand-with-marketing-management-courses">
-						READ FULL ARTICLE >>
+						READ FULL ARTICLE <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
 					</a>
 				</p>			
 			</article>
@@ -36,7 +36,7 @@
 
 
 		
-		<div class="row box-padded box-white">
+		<div class="row box-padded box-white xs-flex xs-flex-direction-column">
 		
 			<article class="col-sm-6">
 				<h2 class="h3-alt">Managing a business environment</h2>
@@ -53,12 +53,12 @@
 
 				<p>
 					<a class="btn btn-red" href="/article/managing-a-business-environment">
-						READ FULL ARTICLE >>
+						READ FULL ARTICLE <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
 					</a>
 				</p>
 			</article>
 
-			<figure class="col-sm-6 text-center">
+			<figure class="col-sm-6 text-center xs-flex-first xs-baseline-xs">
 				<img src="images/paralegal-courses-nov16.jpg">
 			</figure>
 

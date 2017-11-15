@@ -1,5 +1,9 @@
 // Typography
 // --------------------------------------------------
+* {
+  outline: none;
+}
+
 
 // Headings
 // -------------------------
@@ -45,12 +49,23 @@ h6, .h6, .h6-alt {
   }
 }
 
-h1, .h1, .h1-alt { font-size: $font-size-h1; }
-h2, .h2, .h2-alt { font-size: $font-size-h2; font-size: 50px;}
-h3, .h3, .h3-alt { font-size: $font-size-h3; }
-h4, .h4, .h4-alt { font-size: $font-size-h4; }
-h5, .h5, .h5-alt { font-size: $font-size-h5; }
-h6, .h6, .h6-alt { font-size: $font-size-h6; }
+@media (min-width: $screen-sm-min) {
+  h1, .h1, .h1-alt { font-size: $font-size-h1; }
+  h2, .h2, .h2-alt { font-size: $font-size-h2; }
+  h3, .h3, .h3-alt { font-size: $font-size-h3; }
+  h4, .h4, .h4-alt { font-size: $font-size-h4; }
+  h5, .h5, .h5-alt { font-size: $font-size-h5; }
+  h6, .h6, .h6-alt { font-size: $font-size-h6; }
+}
+
+@media (max-width: $screen-xs-max) {
+  h1, .h1, .h1-alt { font-size: $font-size-h1-xs; }
+  h2, .h2, .h2-alt { font-size: $font-size-h2-xs; }
+  h3, .h3, .h3-alt { font-size: $font-size-h3-xs; }
+  h4, .h4, .h4-alt { font-size: $font-size-h4-xs; }
+  h5, .h5, .h5-alt { font-size: $font-size-h5-xs; }
+  h6, .h6, .h6-alt { font-size: $font-size-h6-xs; }
+}
 
 
 // Body text

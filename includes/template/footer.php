@@ -18,7 +18,7 @@
 					and hand-picked partners.</p>
 			</div>
 
-			<div class="col-md-2">
+			<div class="col-md-3">
 				<h3 class="h4-alt text-green">Find a campus</h3>
 				<ul>
 					<li>
@@ -48,7 +48,7 @@
 				</ul>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<h3 class="h4-alt text-green">Mailing list</h3>
 
 				<p>
@@ -56,8 +56,15 @@
 				</p>
 
 				<div id="subscribe-form" class="baseline-xs">
-					<input type="email" value="" name="email" class="" id="txt_email" placeholder="Your email address">
-					<button id="btn_subscribe" class="btn btn-primary"></button>
+					<div class="form-group flex">
+						<label class="sr-only" for="exampleInputEmail2">Email address</label>
+						<input type="email" value="" name="email" class="form-control" id="txt_email" placeholder="Your email address">
+
+						<button id="btn_subscribe" class="subscribe-submit / btn btn-primary">
+							<span class="visible-xs-inline-block">Submit</span>
+							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+						</button>
+					</div>
 				</div>
 
 
@@ -76,7 +83,7 @@
 						<a href="http://www.linkedin.com/company/the-business-school" target="_blank">
 							<img src="img/linkedin-icon.gif" alt="LinkedIn" />
 						</a>
-					</lii>
+					</li>
 				</ol>
 			</div>
 	
@@ -92,11 +99,11 @@
 
 <div class="container">
 	<div class="row box-padded">
-		<div class="col-md-3 text-right">
+		<div class="footer__logo / col-md-3 xs-baseline-xs">
 			<img src="img/footer-logo.png" lt="The Business School Logo" />
 		</div>
 
-		<div class="col-md-9">
+		<div class="footer__disclaimer / col-md-9">
 			<p class="small baseline-none">Varsity College is an educational brand of The Independent Institute of Education (Pty) Ltd which is
 				registered with the Department of Higher Education and Training as a private higher education and
 				training institution under the Higher Education Act, 1997 (reg. no. 2007/HE07/002). Company registration

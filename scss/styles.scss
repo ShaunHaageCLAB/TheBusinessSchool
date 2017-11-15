@@ -38,6 +38,7 @@
 @import "bootstrap/forms";
 // @import "bootstrap/buttons";
 @import "bootstrap-custom/buttons";
+
 // Components
 // @import "bootstrap/component-animations";
 // @import "bootstrap/dropdowns";
@@ -45,6 +46,7 @@
 // @import "bootstrap/input-groups";
 // @import "bootstrap/navs";
 // @import "bootstrap/navbar";
+
 @import "bootstrap-custom/navbar"; // Custom
 @media (min-width: $grid-float-breakpoint) {
     @import "bootstrap-custom/navbar-desktop"; // Custom
@@ -76,11 +78,13 @@
 // @import "bootstrap/tooltip";
 // @import "bootstrap/popovers";
 // @import "bootstrap/carousel";
+
 // Custom styles
 // @import "includes/custom";
 // @import "includes/programmes";
 // @import "includes/style-extend";
 // @import "includes/vaughn";
+
 // Custom Components
 @import "components-custom/structure"; 
 @import "components-custom/homepage";
@@ -88,6 +92,7 @@
 @import "components-custom/contact";
 @import "components-custom/slick";
 @import "components-custom/slick-theme";
+
 // Utility classes
 @import "bootstrap-custom/utilities"; // Custom
 @import "bootstrap/responsive-utilities";

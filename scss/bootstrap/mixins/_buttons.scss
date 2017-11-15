@@ -7,6 +7,10 @@
   color: $color;
   background-color: $background;
   border-color: $border;
+  
+  &:visited {
+    color: $color; 
+  } 
 
   &:focus,
   &.focus {
@@ -39,6 +43,8 @@
   .open > &.dropdown-toggle {
     background-image: none;
   }
+
+ 
   &.disabled,
   &[disabled],
   fieldset[disabled] & {

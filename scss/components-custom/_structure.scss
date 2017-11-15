@@ -25,12 +25,41 @@
 body {
 	overflow: auto;
 }
+input[type=button], input[type=reset], input[type=submit], button {
+	min-width: 0;
+}
 
 
 
+// Footer
+// ----------------------------------------------------------------
+@media (min-width: $screen-xs-max) {
+	.section__footer-about {
+		background: url("../img/footer-bg.jpg") no-repeat center center;
+		background-size: cover;
+		padding: 100px 0;
+	}	
 
-.section__footer-about {
-	background: url("../img/footer-bg.jpg") no-repeat center center;
-	background-size: cover;
-	padding: 100px 0;
+	.footer__logo {
+		text-align: right;
+		padding-top: 5px;
+	}
+
+	.footer__disclaimer {
+		border: solid 1px $gray;
+		border-width: 1px 0;
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.section__footer-about {
+		padding: $grid-gutter-width*2 0;
+	}		
+	.footer__logo {
+		text-align: center;
+	}	
+
+    .subscribe-submit  {
+        width: 100%;
+    }
 }

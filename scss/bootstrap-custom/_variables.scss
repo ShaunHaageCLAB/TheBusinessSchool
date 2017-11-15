@@ -2,7 +2,7 @@ $bootstrap-sass-asset-helper: false !default;
 //
 // Variables
 // --------------------------------------------------
-
+$transition : cubic-bezier(0.445, 0.050, 0.550, 0.950);
 
 //== Colors
 //
@@ -13,8 +13,8 @@ $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   #acacac !default;
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$gray-light:             lighten($gray, 10%) !default; // #777
+$gray-lighter:           lighten($gray, 93.5%) !default; // #eee
 $white: 				white;
 
 $lime: 		#c1c841; 
@@ -22,6 +22,18 @@ $green: 	#83c546;
 $yellow: 	#fecc00; 
 $red: 		#ce161e;
 $orange : 	#f26522; 
+
+$lime-dark: 	darken(#c1c841, 10%); 
+$green-dark: 	darken(#83c546, 10%);
+$yellow-dark: 	darken(#fecc00, 10%);
+$red-dark: 		darken(#ce161e, 10%);
+$orange-dark : 	darken(#f26522, 10%);
+
+$lime-light: 	lighten(#c1c841, 10%); 
+$green-light: 	lighten(#83c546, 10%);
+$yellow-light: 	lighten(#fecc00, 10%);
+$red-light: 	lighten(#ce161e, 10%);
+$orange-light : lighten(#f26522, 10%);
 
 
 $brand-primary:         $lime !default;
@@ -73,12 +85,20 @@ $font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
-$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h1:            floor(($font-size-base * 3.6)) !default; // ~50px
 $font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
 $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
 $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+$font-size-h1-xs:            floor(($font-size-base * 2.4)) !default; // ~50px 
+$font-size-h2-xs:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3-xs:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4-xs:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5-xs:            $font-size-base !default;
+$font-size-h6-xs:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
@@ -303,6 +323,9 @@ $zindex-navbar-fixed:      1030 !default;
 $zindex-modal-background:  1040 !default;
 $zindex-modal:             1050 !default;
 
+$zindex-menu-main: 		   	1050 !default;
+$zindex-menu-toggle:    	1060 !default;
+
 
 //== Media queries breakpoints
 //
@@ -383,7 +406,13 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    50px !default;
+// Basics of a navbar
+$header-height:                    100px !default; 
+$header-height-reduced:            60px !default; 
+
+$navbar-height:                    30px !default; 
+$navbar-height-mobile:             60px !default; 
+
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
@@ -391,14 +420,15 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-bg:                $white !default;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
-$navbar-default-link-color:                #777 !default;
-$navbar-default-link-hover-color:          #333 !default;
-$navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-bg:                   $white !default;
+$navbar-default-link-color:                $black !default;
+$navbar-default-link-hover-color:          $white !default;
+$navbar-default-link-hover-bg:             $black !default;
+$navbar-default-link-active-color:         $white !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
