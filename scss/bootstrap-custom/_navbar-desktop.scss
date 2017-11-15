@@ -1,3 +1,24 @@
+// Information Bar
+// =======================================================	
+.infobar__wrapper {
+	background: $black;
+	color: $white;
+	font-weight: bold;
+}
+	.infobar__message {
+		line-height: 47px;
+	}
+
+	.utility__menu {
+		float: right;
+	}
+
+	.utility__link.btn {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+
 // Navigation
 // =======================================================	
 .navbar-toggle {
@@ -19,20 +40,17 @@ body {
 // Page Header
 // =======================================================
 .site-header {
-	height: $header-height;
 	top: 0;
 	left: 0;
 	right: 0;
 	position: fixed;	
     z-index: $zindex-navbar;
-    background: $navbar-default-bg;
+	background: $navbar-default-bg;
+	border-bottom: solid 2px $green;
 
 }	
 
 .has-reduced-menu {
-    .site-header {
-        height: $header-height-reduced;
-    }
     .navbar-brand {
         line-height: $header-height-reduced;        
         height: $header-height-reduced;        
@@ -109,16 +127,17 @@ body {
 
 // Dropdowmn Menus
 // =======================================================	
+$menu-spacing: 16px;
+
 .level-2-wrapper {
 	position: absolute;
 	z-index: $zindex-dropdown;
-	top: calc(100% - 2px);
+	top: 100%;
 	left: 0;
 	right: 0;
     max-height: 0;
     opacity: 0;
 	overflow: hidden;
-
     background: $white;
 
     .has-small-drop-down & {
@@ -130,7 +149,8 @@ body {
 		&:hover, &.is-active {
 			.level-2-wrapper {
                 max-height: 500px;
-                opacity: 1;			
+				opacity: 1;	
+				box-shadow: 0 9px 12px rgba(0,0,0,0.17);		
 			}
         }
         &.has-small-drop-down {
@@ -138,18 +158,10 @@ body {
         }
 	}
 
-		.nav,
-		.level-1-list,
-		.level-2-list,
-		.level-3-list  {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-		}
-		
+	
 		.level-2-list {
-            padding: 16px;
-            border: solid 1px $gray;
+            padding: $menu-spacing;
+			border: solid 2px $green;
             border-top: none;            
         }
         
@@ -173,12 +185,6 @@ body {
                     color: $navbar-default-link-hover-color;                    
 				}
 			}
-
-			// .level-2-link,
-			// .level-3-link {
-			// 	padding: 5px;
-			// }
-
             .js-menu-back,
             .menu-back-item {
 				display: none !important;
@@ -190,26 +196,45 @@ body {
 // =======================================================	
 .level-2-megamenu {
     overflow: hidden;
-    padding: 0 8px;
-    padding-bottom: 16px;
+    padding: 0 $menu-spacing/2;
+	
     .level-2-item {                
         float: left;
-        margin: 16px 8px;
-        margin-bottom: 0;
+        margin: 0 $menu-spacing/2 $menu-spacing $menu-spacing/2;
     }            
 }
 
+
+// Megamenu columns
 .megamenu-4-col .level-2-item {
-    width: calc(25% - 16px);
+    width: calc(25% - #{$menu-spacing});
 }
 .megamenu-3-col .level-2-item {
-    width: calc(33.333% - 16px);
+    width: calc(33.333% - #{$menu-spacing});
 }
 .megamenu-2-col .level-2-item {
-    width: calc(50% - 16px);                    
+    width: calc(50% - #{$menu-spacing});                    
 }            
 
 
+// Text and link styles
+.mega__link {
+    padding: 15px;
+    transition: 200ms all $transition;
+}
+
+.mega__title {
+    text-transform: capitalize;
+    color: $white;
+    margin: 0 0 10px;
+}
+.mega__subtitle {
+    color: $white;
+    margin: 0;
+}
+
+
+// Pretty Colours
 .mega__item {
     &:nth-of-type(2),
     &:nth-of-type(6)  {
@@ -249,17 +274,3 @@ body {
     }
 }
 
-.mega__link {
-    padding: 15px;
-    transition: 200ms all $transition;
-}
-
-.mega__title {
-    text-transform: capitalize;
-    color: $white;
-    margin: 0 0 10px;
-}
-.mega__subtitle {
-    color: $white;
-    margin: 0;
-}

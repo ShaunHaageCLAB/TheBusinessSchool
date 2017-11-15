@@ -22,8 +22,11 @@
     }
 }
 
-.nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.nav,
+.level-1-list,
+.level-2-list,
+.level-3-list  {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }

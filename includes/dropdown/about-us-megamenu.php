@@ -10,13 +10,19 @@
             <a href="#" class="level-2-link / mega__link">
                 <span class="mega__title h2 block">
                     The IIE
+				</span>
+				<span class="mega__title h5-alt block">
+					Sub Title
                 </span>
 			</a>
 		</li>
 		<li class="level-2-item / mega__item">
             <a href="#" class="level-2-link / mega__link">
                 <span class="mega__title h2 block">
-                    About TBS
+                    About The Business School
+				</span>
+				<span class="mega__title h5-alt block">
+					Sub Title
                 </span>
 			</a>
 		</li>
@@ -24,6 +30,9 @@
             <a href="#" class="level-2-link / mega__link">
                 <span class="mega__title h2 block">
                     Short Learning FAQ's
+				</span>
+				<span class="mega__title h5-alt block">
+					Sub Title
                 </span>
 			</a>
 		</li>
@@ -31,6 +40,9 @@
             <a href="#" class="level-2-link / mega__link">
                 <span class="mega__title h2 block">
                     How to register
+				</span>
+				<span class="mega__title h5-alt block">
+					Sub Title
                 </span>
 			</a>
 		</li>

@@ -12,7 +12,7 @@
 		</li>
 		<li class="level-2-item">
 			<a href="#" class="level-2-link">
-				About TBS
+				About The Business School
 			</a>
 		</li>
 		<li class="level-2-item">

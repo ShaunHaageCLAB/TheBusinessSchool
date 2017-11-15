@@ -1,31 +1,26 @@
 $button_height: 44px;
 
 body {
-	padding-top: $navbar-height-mobile;
-}
+	padding-top: $header-height-mobile;
+} 
 
 // Page Header
 // =======================================================
-.andrew_fairlie {
-	display: flex;
+.site-header {
 	position: fixed;
+	z-index: $zindex-navbar;
 	top: 0;
 	left: 0;
 	right: 0;
-	height: $navbar-height-mobile;
-	z-index: $zindex-navbar;
+	height: $header-height-mobile; 
 	background: $white;
+	padding: 10px 0;
+	border-bottom: solid 2px $green;
 }
 
-.navbar-brand-wrapper {
-	flex: 1 1 auto;
-	padding-left: 10px;
-}
-
-	.navbar-brand-logo {
-		height: $navbar-height-mobile - 20px;
-		margin-top: 10px;
-	}	
+    .navbar-brand-logo {
+		height: $header-height-mobile - 20px;
+	}
 
 
 
@@ -35,9 +30,9 @@ body {
 	padding: 0;
 }
 
-.navbar-secondary {
+.navbar-primary {
 	position: fixed;
-	top: $navbar-height-mobile;
+	top: $header-height-mobile;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -48,6 +43,7 @@ body {
 	transform: translate3d(100%, 0, 0);
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
+	background: $green;
 
 	.has-navigation-active & {
 		transform: translate3d(0, 0, 0);
@@ -62,30 +58,6 @@ body {
 }
 
 
-// Primary navbar
-// ----------------------------------------------
-.navbar-primary {
-	background-color: $navbar-default-bg;
-
-	.navbar-nav {
-		> li {
-			margin: 0 1px;
-		}
-
-		> li > a {
-			font-size: 1.8rem;
-		}
-	}
-
-    > .disabled > a {
-		&, &:hover, &:focus {
-			color: $navbar-default-link-disabled-color;
-			background-color: $navbar-default-link-disabled-bg;
-		}
-    }
-}
-
-
 
 
 .toggle__search-wrapper {
@@ -95,26 +67,28 @@ body {
 // Navbar Toggle button
 // =======================================================
 .navbar-toggle {
-	padding: 0;
-	background-color: $yellow;
-	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+	width: 50px; 
+	font-size: 30px;
 	border: none;
-	width: $navbar-height-mobile;
-	font-size: 40px;
-	color: $white; 
+	padding: 0;
+	background-color: $white;
+	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
 	text-align: center;
+	color: $gray; 
+	border: solid 1px $gray;
+	float: right;
 
 	.fa-close {
 		display: none;
 	}
 	
 	&:hover, &:focus {
-		background-color: $yellow;
+		background-color: $white;
 	}
 
 	&:focus {
 		outline: 0;
-		background-color: $yellow;
+		background-color: $white;
 	}
 }
 
@@ -150,14 +124,11 @@ body {
 		.level-1-list,
 		.level-2-list,
 		.level-3-list  {
-			list-style: none;
-			padding: 0;
-			margin: 0;
 			transition: all 200ms $transition;
 		}
 
 
-	.navbar-secondary {
+	.navbar-primary {
 		&[data-menu='2'] .level-1-list {
 			transform: translate3d(-100%, 0, 0);
 		}
@@ -178,7 +149,7 @@ body {
 				padding: 0 15px;
 				line-height: $button_height;
 				text-align: left;
-				border-bottom: solid 1px darken($red, 5%);
+				border-bottom: solid 1px $white;
 
 				&:hover,
 				&:focus {

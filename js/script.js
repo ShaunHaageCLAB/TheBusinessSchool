@@ -6,7 +6,7 @@ var BS = {
 
         var $cache = {
             body:           $('body'),
-            navigation:     $("#primary-navigation"),
+            navigation:     $("#site-navigation"),
             header:         $("#site-header"),
             content:        $('#s4-workspace'),
             footer:         $('#site-footer')
@@ -28,6 +28,36 @@ var BS = {
             autoplaySpeed: 5000
         }); 
 
+
+		// Toggle Navigation menu for mobile and Tablet portrait
+		// -----------------------------------------------------------
+		$cache.header.on('click', '.js-toggle-menu', function () {
+			$cache.body.toggleClass('has-navigation-active');
+			return false;
+		});
+
+
+		// Toggle Search form
+		// -----------------------------------------------------------
+		$cache.header.on('click', '.js-toggle-search', function () {
+			$cache.body.toggleClass('has-search-active');
+			return false;
+		});
+
+
+
+		// Back to top
+		// -----------------------------------------------------------
+		$cache.footer.on('click', '.js-btn-back-to-top', function (event) {
+			var target = $(this.hash);
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 500);
+
+			event.preventDefault();
+		});
+
+		
         // Scroll Events
 		// -----------------------------------------------------------
         

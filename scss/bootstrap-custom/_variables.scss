@@ -315,13 +315,13 @@ $dropdown-caret-color:           #000 !default;
 // Note: These variables are not generated into the Customizer.
 
 $zindex-slideshow-arrows:  1000 !default;
-$zindex-navbar:            1000 !default;
 $zindex-dropdown:          1000 !default;
 $zindex-popover:           1060 !default;
 $zindex-tooltip:           1070 !default;
 $zindex-navbar-fixed:      1030 !default;
 $zindex-modal-background:  1040 !default;
 $zindex-modal:             1050 !default;
+$zindex-navbar:            1050 !default;
 
 $zindex-menu-main: 		   	1050 !default;
 $zindex-menu-toggle:    	1060 !default;
@@ -409,9 +409,10 @@ $container-lg:                 $container-large-desktop !default;
 // Basics of a navbar
 $header-height:                    100px !default; 
 $header-height-reduced:            60px !default; 
+$header-height-mobile:             80px !default; 
 
 $navbar-height:                    30px !default; 
-$navbar-height-mobile:             60px !default; 
+
 
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
