@@ -96,8 +96,8 @@ var BS = {
 
         $('#site-navigation').on('click', '.js-menu-back', function () {
             var $el = $(this),
-                $parent = $el.parent('li');
-
+                $parent = $el.parents('li.level-1-item');
+            
             menulevel--;
             $parent.removeClass('is-expanded');
             $cache.navigation.attr('data-menu', menulevel);

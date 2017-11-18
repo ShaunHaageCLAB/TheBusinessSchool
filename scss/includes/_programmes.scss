@@ -68,55 +68,6 @@
 
 /* List */
 
-.nav-pills.all-programmes-list>li>a {
-    background: white none repeat scroll 0 0;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.nav-pills.all-programmes-list>li h4 {
-    font-family: "BauerBodoni-Bold", Arial, sans-serif;
-    font-size: 29px;
-    margin-bottom: 0px;
-    margin-top: 5px;
-}
-
-.nav-pills.all-programmes-list>li span {
-    text-transform: uppercase;
-}
-
-.nav-pills.all-programmes-list>li>a {
-    border: 3px solid #b2b2b2;
-    border-radius: 0px;
-    border-bottom: 12px solid #b2b2b2;
-    padding: 5px 15px 12px;
-}
-
-.nav-pills.all-programmes-list>li>a:focus,
-.nav-pills.all-programmes-list>li>a:hover {
-    background: white;
-    color: black;
-}
-
-.nav-pills.all-programmes-list>li.all-programmes-list-item-gray>a {
-    border-color: #b2b2b2;
-}
-
-.nav-pills.all-programmes-list>li.all-programmes-list-item-green>a {
-    border-color: $brand-primary;
-}
-
-.nav-pills.all-programmes-list>li.all-programmes-list-item-yellow>a {
-    border-color: $yellow;
-}
-
-.nav-pills.all-programmes-list>li.all-programmes-list-item-red>a {
-    border-color: $red;
-}
-
-.nav-pills.all-programmes-list>li.all-programmes-list-item-orange>a {
-    border-color: $orange;
-}
 
 
 /*===============================================

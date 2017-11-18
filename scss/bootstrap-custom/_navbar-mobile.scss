@@ -43,7 +43,7 @@ body {
 	transform: translate3d(100%, 0, 0);
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
-	background: $green;
+	background: $white;
 
 	.has-navigation-active & {
 		transform: translate3d(0, 0, 0);
@@ -144,23 +144,28 @@ body {
 			.level-3-link {
 				text-transform: uppercase;
 				font-weight: bold;		
-				color: $white;
+				color: $black;
 				display: block;
 				padding: 0 15px;
 				line-height: $button_height;
 				text-align: left;
-				border-bottom: solid 1px $white;
+				border-bottom: solid 1px $gray;
 
 				&:hover,
 				&:focus {
 					color: $navbar-default-link-hover-color;
-					background-color: darken($red, 5%);
+					background-color: $gray;
 					text-decoration: none;
 				}
 
 				&:visited {
-					color: $white;
+					color: $black;
 				}				
+			}
+
+			.mega__link {
+					padding: 8px 15px;    
+					border-bottom-color: $white;
 			}
 
 
@@ -195,3 +200,4 @@ body {
 				}				
 			}
 	}
+

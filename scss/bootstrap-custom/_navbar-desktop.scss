@@ -6,7 +6,7 @@
 	font-weight: bold;
 }
 	.infobar__message {
-		line-height: 47px;
+		line-height: $header-infobar-height;
 	}
 
 	.utility__menu {
@@ -26,7 +26,7 @@
 }
 
 body {
-	padding-top: $header-height;
+	padding-top: $header-height + $header-infobar-height + 2px;
 }
 
 .site-header,
@@ -60,7 +60,7 @@ body {
     }
     .navbar-primary .navbar-nav > li {
         height: $header-height-reduced; 
-        padding-top: 10px;
+        padding-top: 15px;
     }
 }
 
@@ -222,55 +222,3 @@ $menu-spacing: 16px;
     padding: 15px;
     transition: 200ms all $transition;
 }
-
-.mega__title {
-    text-transform: capitalize;
-    color: $white;
-    margin: 0 0 10px;
-}
-.mega__subtitle {
-    color: $white;
-    margin: 0;
-}
-
-
-// Pretty Colours
-.mega__item {
-    &:nth-of-type(2),
-    &:nth-of-type(6)  {
-        .mega__link {
-            background-color: $yellow;
-            &:hover {
-                background-color: $yellow-light;
-            }
-        }
-    }
-    &:nth-of-type(3),
-    &:nth-of-type(7) {
-        .mega__link {
-            background-color: $lime;
-            &:hover {
-                background-color: $lime-light;
-            }
-        }
-    }
-    &:nth-of-type(4),
-    &:nth-of-type(8) {
-        .mega__link {
-            background-color: $red;
-            &:hover {
-                background-color: $red-light;
-            }
-        }
-    }
-    &:nth-of-type(5),
-    &:nth-of-type(9) {
-        .mega__link {
-            background-color: $orange;
-            &:hover {
-                background-color: $orange-light;
-            }
-        }
-    }
-}
-
