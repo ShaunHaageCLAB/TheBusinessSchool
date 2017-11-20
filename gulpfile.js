@@ -28,7 +28,7 @@ var paths = {
         imports: './scss/**/*.scss'
     },
     scripts: {
-        src: ['./js/plugins/*.js', './js/script.js']
+        src: ['./js/plugins/jquery-2.2.4.js', './js/plugins/bootstrap.js', './js/plugins/slick.js', './js/script.js']
     },
     developmentScripts: './scripts',
     productionScripts: './scripts/production'

@@ -94,7 +94,22 @@ a.btn {
   @include button-variant($white, $red, $red);
 }
 
+.btn-green {
+  @include button-variant($white, $green, $green);
+}
 
+.btn-yellow {
+  @include button-variant($white, $yellow, $yellow);
+}
+
+.btn-orange {
+  @include button-variant($white, $orange, $orange);
+}
+.btn-gray {
+  @include button-variant($white, $gray, $gray);
+}
+
+ 
 
 
 // Link buttons
@@ -133,6 +148,22 @@ a.btn {
       color: $btn-link-disabled-color;
       text-decoration: none;
     }
+  }
+}
+
+
+.btn-close {
+  padding: 0;
+  border: none;
+  color: $brand-danger;
+  font-size: 36px;
+  &:hover {
+    background:  $white;
+  }
+  .modal & {
+    position: absolute;
+    top: 0;
+    right: 10px;
   }
 }
 

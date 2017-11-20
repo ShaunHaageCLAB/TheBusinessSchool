@@ -1,0 +1,37 @@
+.panel__wrapper {
+    margin-bottom: 20px;
+}
+    .panel__tabs-wrapper {
+        overflow: hidden;
+        position: relative;
+        top: 2px;
+        z-index: 1;
+        margin: 0 -2px;
+    }
+        .panel__tabs-col {
+            padding: 0 2px;
+        }
+        .panel__tab {
+            border: solid 2px transparent;
+            border-bottom: none;
+
+            &.is-active {
+                border-color: $gray;
+                color: $gray;
+                background-color: $white;
+                border-bottom-color: $white;
+            }            
+        }
+
+        .panel__content {
+            position: relative;
+            z-index: 0;
+            max-height: 0;
+            overflow: hidden;
+
+            &.is-active {
+                border: solid 2px $gray;
+                padding: 15px;
+                max-height: 100vh;
+            }        
+        }

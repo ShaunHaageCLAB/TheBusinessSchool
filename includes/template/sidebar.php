@@ -1,4 +1,4 @@
-<div class="col-sm-4">
+<aside id="site-sidebar" class="site-sidebar / col-sm-4">
     
     <ul class="subnav__menu / nav baseline-md">
         <li class="subnav__item is-active">
@@ -120,4 +120,4 @@
 
     </ul>
 
-</div>
+</aside>

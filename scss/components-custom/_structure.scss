@@ -31,13 +31,21 @@ input[type=button], input[type=reset], input[type=submit], button {
 
 
 
-
+// Footer
+// ----------------------------------------------------------------
 .content__wrapper {
-	padding: 20px 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 
-
+// Sidebar
+// ----------------------------------------------------------------
+@media (max-width: $screen-sm-max) {
+	.site-sidebar {
+		display: none;
+	}
+}
 
 // Footer
 // ----------------------------------------------------------------
@@ -91,6 +99,10 @@ input[type=button], input[type=reset], input[type=submit], button {
 	height: 80px;
 	position: relative;
 	width: calc(100% - #{$border1});
+
+	&:visited {
+		color: $black;
+	}
 
 
  	.is-active & {

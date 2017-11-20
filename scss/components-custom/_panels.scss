@@ -1,0 +1,65 @@
+$programmes_margin_small: 10px;
+
+.programmes__menu {
+    margin: 0 -10px !important;
+    font-size: 0;
+}
+
+    .programmes__item {
+        width: 33%;
+        padding: 0 5px 10px 5px;
+        font-size: $font-size-base;
+        vertical-align: top;
+    }
+
+        .programmes__link {
+            display: block;
+            color: $text-color;
+            border: solid 2px $brand-primary;
+            padding: 5px;
+            &:visited {
+                color: $text-color;
+            }
+            &:hover {
+                background: $brand-primary;
+                color: $white;
+
+                .programmes__title,
+                .programmes__sub-title,
+                .programmes__details dt,
+                .programmes__details dd,
+                .text-grey {
+                    color: $white;
+                }
+            }
+        }
+
+            .programmes__thumbnail {
+                margin-bottom: $programmes_margin_small;
+            }
+
+            .programmes__header {
+                min-height: 10rem;
+
+            }
+                .programmes__title {
+                    margin-bottom: $programmes_margin_small;
+                }
+
+                .programmes__sub-title {
+                    margin-bottom: $programmes_margin_small;
+                }
+
+
+            .programmes__details {
+                overflow: hidden;                
+                margin-bottom: $programmes_margin_small*4;
+
+                dt, dd {
+                    float: left;
+                    padding-right: 5px;
+                }
+                dt {
+                    clear: both;
+                }
+            }

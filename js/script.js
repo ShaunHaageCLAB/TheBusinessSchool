@@ -105,7 +105,35 @@ var BS = {
             return false;
         });
 
-        
+
+        // Accordian Menu
+        // -----------------------------------------------------------
+        $cache.content.on('click', '.js-accordion .accordion__title', function () {
+            var $el = $(this),
+                $parent = $el.parents('.accordion__item'),
+                $siblings = $parent.siblings();
+
+            $parent.toggleClass('is-active');
+            $siblings.removeClass('is-active');
+
+            return false;
+        });
+
+        // Tabs
+        // -----------------------------------------------------------
+        $cache.body.on('click', '.js-tab', function () {
+            var $el = $(this),
+                data = $el.data();
+
+            $('[data-panel=' + data.tab + ']').addClass('is-active')
+                .siblings('[data-panel]').removeClass('is-active');
+
+            $el.addClass('is-active').parents().siblings().find('[data-tab]').removeClass('is-active');
+
+            return false;
+        });
+
+
     }
 };
 

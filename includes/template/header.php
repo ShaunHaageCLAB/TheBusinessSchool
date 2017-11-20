@@ -1,6 +1,6 @@
 <header class="site-header" id="site-header">
 
-	<div class="infobar__wrapper visible-sm-block visible-md-block visible-lg-block">
+	<div class="infobar__wrapper visible-md-block visible-lg-block">
 		<div class="container clearfix">
 			<span class="infobar__message text-uppercase">
 				Click here for <a href="#">Part Time qualifications</a>
@@ -29,7 +29,7 @@
 					</a>
 				</li>
 				<li class="utility__item">
-					<a class="utility__link btn btn-red" href="" >
+					<a class="utility__link btn btn-red" href="#"  data-toggle="modal" data-target="#modal-enquiries">
 						<i class="fa fa-info-circle" aria-hidden="true"></i>	
 						Enquire Now
 					</a>

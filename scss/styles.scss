@@ -34,11 +34,12 @@
 // @import "bootstrap/type";
 @import "bootstrap-custom/type";
 // @import "bootstrap/code";
-@import "bootstrap/grid";
+// @import "bootstrap/grid";
+@import "bootstrap-custom/grid";
 // @import "bootstrap/tables";
 @import "bootstrap/forms";
 // @import "bootstrap/buttons";
-@import "bootstrap-custom/buttons";
+@import "bootstrap-custom/buttons"; 
 
 // Components
 // @import "bootstrap/component-animations";
@@ -75,7 +76,7 @@
 
 
 // Components w/ JavaScript
-// @import "bootstrap/modals";
+@import "bootstrap-custom/modals";
 // @import "bootstrap/tooltip";
 // @import "bootstrap/popovers";
 // @import "bootstrap/carousel";
@@ -89,10 +90,14 @@
 // Custom Components
 @import "components-custom/structure"; 
 @import "components-custom/homepage";
+@import "components-custom/accordion"; 
+@import "components-custom/tabs"; 
+@import "components-custom/panels"; 
 @import "components-custom/search";
 @import "components-custom/contact";
 @import "components-custom/slick";
 @import "components-custom/slick-theme";
+@import "components-custom/news";
 
 // Utility classes
 @import "bootstrap-custom/utilities"; // Custom

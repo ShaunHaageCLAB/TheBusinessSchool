@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6,
 
 .h1-alt, .h2-alt, .h3-alt, .h4-alt, .h5-alt, .h6-alt {
   font-family: $font-family-sans-serif;	
+  font-weight: normal;
 }
 
 h1, .h1, .h1-alt,
@@ -72,8 +73,8 @@ h6, .h6, .h6-alt {
 // -------------------------
 
 p {
-  	margin: 0 0 ($line-height-computed / 2);
-	line-height: 1.8;
+  	margin: 0 0 ($line-height-computed);
+	  line-height: 1.8; 
   	// font-weight: 600;
 //   letter-spacing: 1px;
 //   line-height: 30px;
@@ -134,30 +135,12 @@ mark,
     color: $text-color;
 }
 
-.text-green {
-    color: $brand-primary;
-    font-weight: bold;
-}
-
-.text-yellow {
-    color: $yellow;
-    font-weight: bold;
-}
-
-.text-grey {
-    color: $gray;
-    font-weight: bold;
-}
-
-.text-red {
-    color: $red;
-    font-weight: bold;
-}
-
-.text-white {
-	color: $white;
-	font-weight: bold;
-}
+.text-green {     color: $brand-primary;   }
+.text-yellow {    color: $yellow;   }
+.text-grey {      color: $gray;   }
+.text-red {       color: $red;   }
+.text-orange {    color: $orange;   }
+.text-white {	    color: $white;}
 
 .strong,
 .text-strong {
@@ -206,7 +189,7 @@ mark,
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed);
   ul,
   ol {
     margin-bottom: 0;
