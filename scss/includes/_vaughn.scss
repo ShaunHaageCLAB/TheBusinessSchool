@@ -1,0 +1,95 @@
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    .slider .slide-content {
+        width: 100%;
+        top: 150px;
+    }
+    .enquire {
+        width: 50%;
+        top: 140px;
+    }
+    .ProgrammeIntro {
+        overflow: hidden;
+    }
+    .ProgrammeIntro img {
+        width: 100%!important;
+        float: none;
+    }
+    .programme-copy {
+        padding: 10px;
+        width: 100%;
+    }
+    .explore-button {
+        width: 100%;
+    }
+    .choose-content {
+        width: 100%;
+        height: auto;
+    }
+    .choose {
+        width: 100%;
+        height: auto;
+    }
+    .footer-content img {
+        width: 100%;
+    }
+    /*.featured-programmes { width: 45% !important; margin: 10px 0 0 0;}*/
+    .row.programmes .container .col-md-3 {
+        width: 45%;
+        float: left;
+        margin: 10px;
+    }
+    .row.programmes .container .col-md-3 a img {
+        width: 100%;
+    }
+    .col-md-2.featured-programmes {
+        width: 45% !important;
+        float: left;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider .slide-content {
+        width: 100%;
+        top: 150px;
+    }
+    .enquire {
+        width: 50%;
+        top: 140px;
+    }
+    .ProgrammeIntro {
+        overflow: hidden;
+    }
+    .ProgrammeIntro img {
+        width: 100%!important;
+        float: none;
+    }
+    .programme-copy {
+        padding: 10px;
+        width: 100%;
+    }
+    .explore-button {
+        width: 100%;
+    }
+    .choose-content {
+        width: 100%;
+        height: auto;
+    }
+    .choose {
+        width: 100%;
+        height: auto;
+    }
+    .footer-content img {
+        width: 100%;
+    }
+    .featured-programmes {
+        width: 100% !important;
+        margin: 10px 0 0 0;
+    }
+    .row.programmes .container .col-md-3 {
+        width: 100%;
+    }
+    .row.programmes .container .col-md-3 a img {
+        width: 100%;
+    }
+}

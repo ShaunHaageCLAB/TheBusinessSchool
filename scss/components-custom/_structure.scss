@@ -1,0 +1,221 @@
+// Sharepoint theme overrides
+// ----------------------------------------------------------------
+.main-content {
+	float: none;
+	width: auto;
+}
+.ms-belltown-anonspacer {
+	height: auto;
+}
+#s4-workspace {
+	max-width: none;
+	width: auto;
+	padding: 0;
+	overflow: inherit;
+}
+#ms-belltown-table {
+	padding: 0;
+	width: auto;
+}
+
+.ms-table {
+	display: block;
+}
+
+body {
+	overflow: auto;
+}
+input[type=button], input[type=reset], input[type=submit], button {
+	min-width: 0;
+}
+
+
+
+// Footer
+// ----------------------------------------------------------------
+.content__wrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+// Sidebar
+// ----------------------------------------------------------------
+@media (max-width: $screen-sm-max) {
+	.site-sidebar {
+		display: none;
+	}
+}
+
+// Footer
+// ----------------------------------------------------------------
+@media (min-width: $screen-xs-max) {
+	.section__footer-about {
+		background: url("../img/footer-bg.jpg") no-repeat center center;
+		background-size: cover;
+		padding: 100px 0;
+	}	
+
+	.footer__logo {
+		text-align: right;
+		padding-top: 5px;
+	}
+
+	.footer__disclaimer {
+		border: solid 1px $gray;
+		border-width: 1px 0;
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.section__footer-about {
+		padding: $grid-gutter-width*2 0;
+	}		
+	.footer__logo {
+		text-align: center;
+	}	
+
+    .subscribe-submit  {
+        width: 100%;
+    }
+}
+
+
+
+
+.subnav__link {
+	$border1: 32px;
+	$border2: 40px;
+	$border3: 36px;
+	$colour_count : 4;
+
+	display: block;
+    background: $white;
+    color: $black;
+    margin-bottom: 10px;
+    border: 3px solid $gray-light;
+    border-bottom: 12px solid $gray-light;
+	padding: 5px 15px 12px;
+	height: 80px;
+	position: relative;
+	width: calc(100% - #{$border1});
+
+	&:visited {
+		color: $black;
+	}
+
+
+ 	.is-active & {
+		border-right-width: 0;
+
+		&:after, &:before {
+			left: 100%;
+			top: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		&:after {
+			border-color: transparent;
+			border-left-color: $white;
+			border-width: $border1;
+			margin-top: -$border1;
+		}
+		&:before {
+			border-color: transparent;
+			border-left-color: $brand-primary;
+			border-width: $border2;
+			margin-top: -$border3;
+		}
+ 	}
+
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	
+	.subnav__item:nth-of-type(#{$colour_count}n + 1) & {	
+		border-color: $yellow;
+		&:before {
+			border-left-color:  $yellow;
+		}
+		&:hover {
+			border-color: $yellow-light;
+			&:before {
+				border-left-color:  $yellow-light;
+			}
+		}			
+	}
+
+	.subnav__item:nth-of-type(#{$colour_count}n + 2) & {		
+		border-color: $lime;
+		&:before {
+			border-left-color:  $lime;
+		}
+		&:hover {
+			border-color: $lime-light;
+			&:before {
+				border-left-color:  $lime-light;
+			}
+		}			
+	}
+
+
+	.subnav__item:nth-of-type(#{$colour_count}n + 3) & {
+		border-color: $red;	
+		&:before {
+			border-left-color:  $red;;
+		}
+		&:hover {
+			border-color: $red-light;
+			&:before {
+				border-left-color:  $red-light;
+			}
+		}			
+	}
+
+	.subnav__item:nth-of-type(#{$colour_count}n + 4) & {	
+		border-color: $orange;
+		&:before {
+			border-left-color:  $orange;
+		}
+		&:hover {
+			border-color: $orange-light;
+			&:before {
+				border-left-color:  $orange-light;
+			}
+		}			
+	}
+
+	// Not being used
+	.subnav__item:nth-of-type(0) & {		
+		border-color: $gray-light;
+		&:before {
+			border-left-color:  $gray-light;
+		}	
+		&:hover {
+			border-color: $gray-lighter;
+			&:before {
+				border-left-color:  $gray-light;
+			}
+		}		
+	}	
+}
+
+.subnav__link:focus,
+.subnav__link:hover {
+    background: white;
+    color: $gray;
+}
+
+
+.arrow_box {
+	position: relative;
+	background: #d51717;
+	border: 5px solid #f500d4;
+}

@@ -1,0 +1,85 @@
+// Navbars
+// --------------------------------------------------
+.site-header {}
+
+.navbar-nav {
+    >.is-active>a {
+        &,
+        &:hover,
+        &:focus {
+            cursor: default;
+        }
+    }
+}
+
+.level-1-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.nav,
+.level-1-list,
+.level-2-list,
+.level-3-list  {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.mega__title {
+    text-transform: capitalize;
+    color: $white;
+    margin: 0 0 10px;
+}
+.mega__subtitle {
+    color: $white;
+    margin: 0;
+}
+
+
+
+// Pretty Colours
+.mega__item {
+    &:nth-of-type(2),
+    &:nth-of-type(6)  {
+        .mega__link {
+            background-color: $yellow;
+            &:hover {
+                background-color: $yellow-light;
+            }
+        }
+    }
+    &:nth-of-type(3),
+    &:nth-of-type(7) {
+        .mega__link {
+            background-color: $lime;
+            &:hover {
+                background-color: $lime-light;
+            }
+        }
+    }
+    &:nth-of-type(4),
+    &:nth-of-type(8) {
+        .mega__link {
+            background-color: $red;
+            &:hover {
+                background-color: $red-light;
+            }
+        }
+    }
+    &:nth-of-type(5),
+    &:nth-of-type(9) {
+        .mega__link {
+            background-color: $orange;
+            &:hover {
+                background-color: $orange-light;
+            }
+        }
+    }
+}

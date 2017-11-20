@@ -1,0 +1,7 @@
+# Ignore Compiled files
+scripts/
+scripts-source/
+css/
+css-source/
+node_modules/
+lib/

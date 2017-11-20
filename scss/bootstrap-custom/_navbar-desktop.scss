@@ -1,0 +1,224 @@
+// Information Bar
+// =======================================================	
+.infobar__wrapper {
+	background: $black;
+	color: $white;
+	font-weight: bold;
+}
+	.infobar__message {
+		line-height: $header-infobar-height;
+	}
+
+	.utility__menu {
+		float: right;
+	}
+
+	.utility__link.btn {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+
+// Navigation
+// =======================================================	
+.navbar-toggle {
+	display: none;
+}
+
+body {
+	padding-top: $header-height + $header-infobar-height + 2px;
+}
+
+.site-header,
+.navbar-brand, 
+.navbar-brand-logo,
+.navbar-primary .navbar-nav > li {
+	transition: all 200ms $transition;
+}
+
+
+// Page Header
+// =======================================================
+.site-header {
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;	
+    z-index: $zindex-navbar;
+	background: $navbar-default-bg;
+	border-bottom: solid 2px $green;
+
+}	
+
+.has-reduced-menu {
+    .navbar-brand {
+        line-height: $header-height-reduced;        
+        height: $header-height-reduced;        
+    }
+    .navbar-brand-logo {
+        padding: 0 20px;
+    }
+    .navbar-primary .navbar-nav > li {
+        height: $header-height-reduced; 
+        padding-top: 15px;
+    }
+}
+
+
+// Logo
+// ----------------------------------------------
+.navbar-brand {
+    width: 140px;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+    line-height: $header-height;
+    height: $header-height;
+}
+    .navbar-brand-logo {
+        display: inline-block;
+	}
+
+
+
+// Primary navbar
+// ----------------------------------------------
+.navbar-primary {
+    background-color: $navbar-default-bg;
+
+	.navbar-nav {
+		> li {
+            float: left;
+            height: $header-height;
+            padding-top: 35px;
+		}
+		> li > a {
+			background-color: $navbar-default-link-bg;
+			color: $navbar-default-link-color;
+        }
+        
+		> li:hover > a {
+			background-color: $navbar-default-link-hover-bg;
+			color: $navbar-default-link-hover-color;
+		}
+	}
+
+    > .is-active > a {
+		&, &:hover, &:focus {
+			color: $navbar-default-link-active-color;
+			background-color: $navbar-default-link-active-bg;
+		}
+	}
+	
+    > .disabled > a {
+		&, &:hover, &:focus {
+			color: $navbar-default-link-disabled-color;
+			background-color: $navbar-default-link-disabled-bg;
+		}
+    }
+}
+
+
+.level-1-link {
+    line-height: $navbar-height;
+    padding: 0 15px
+}
+
+
+// Dropdowmn Menus
+// =======================================================	
+$menu-spacing: 16px;
+
+.level-2-wrapper {
+	position: absolute;
+	z-index: $zindex-dropdown;
+	top: 100%;
+	left: 0;
+	right: 0;
+    max-height: 0;
+    opacity: 0;
+	overflow: hidden;
+    background: $white;
+
+    .has-small-drop-down & {
+        width: 250px;
+    }
+}
+
+	.level-1-item {		
+		&:hover, &.is-active {
+			.level-2-wrapper {
+                max-height: 500px;
+				opacity: 1;	
+				box-shadow: 0 9px 12px rgba(0,0,0,0.17);		
+			}
+        }
+        &.has-small-drop-down {
+            position: relative;
+        }
+	}
+
+	
+		.level-2-list {
+            padding: $menu-spacing;
+			border: solid 2px $green;
+            border-top: none;            
+        }
+        
+			.level-1-link,
+			.level-2-link,
+			.level-3-link  {
+				text-transform: uppercase;
+				font-weight: bold;
+                display: block;                
+                background-color: $navbar-default-link-bg;
+                color: $navbar-default-link-color;
+                      
+				&:visited {
+                    color: $navbar-default-link-color;					
+				}
+                
+				&:hover,
+				&:focus {
+                    text-decoration: none;
+                    background-color: $navbar-default-link-hover-bg;
+                    color: $navbar-default-link-hover-color;                    
+				}
+			}
+            .js-menu-back,
+            .menu-back-item {
+				display: none !important;
+			}
+                
+
+
+// Mega Menu
+// =======================================================	
+.level-2-megamenu {
+    overflow: hidden;
+    padding: 0 $menu-spacing/2;
+	
+    .level-2-item {                
+        float: left;
+        margin: 0 $menu-spacing/2 $menu-spacing $menu-spacing/2;
+    }            
+}
+
+
+// Megamenu columns
+.megamenu-4-col .level-2-item {
+    width: calc(25% - #{$menu-spacing});
+}
+.megamenu-3-col .level-2-item {
+    width: calc(33.333% - #{$menu-spacing});
+}
+.megamenu-2-col .level-2-item {
+    width: calc(50% - #{$menu-spacing});                    
+}            
+
+
+// Text and link styles
+.mega__link {
+    padding: 15px;
+    transition: 200ms all $transition;
+}

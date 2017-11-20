@@ -1,0 +1,76 @@
+$accordion-padding: 10px;
+$accordion-left-padding: 40px;
+
+.accordion__menu {
+	margin-bottom: 40px !important;
+}
+
+	.accordion__item {}
+
+		.accordion__link {
+			background-color: $black;
+            display: block;
+            position: relative;
+
+			&:visited {
+				color: $white;
+			}
+			&:hover {
+				background-color: $gray-darker;
+			}
+			.is-active & {
+				color:  $gray-darker;
+				background: $white;
+			}
+		}
+
+			.accordion__title {
+                display: block;
+				font-weight: bold;
+				padding: $accordion-padding;
+				color: $white;
+                padding-left: $accordion-left-padding;
+
+                .is-active & {
+                    color:  $gray-darker;                    
+                }
+			}
+
+			.accordion__icon {
+                position: absolute;
+                left: 10px;
+                top: 0;
+				@include fa-icon();
+				font-size: 24px;
+				padding: 5px $accordion-padding 0 0;
+				color: $white;
+				
+				&:before {
+					content: $fa-var-chevron-circle-down;
+				}
+				.is-active &:before {
+					content: $fa-var-chevron-circle-up; 
+                    color: $gray-darker; 
+				}				
+			}
+
+        .accordion__panel {
+        }
+
+
+		.accordion__panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 200ms $transition;
+			padding: 0 $accordion-padding;
+            padding-left: $accordion-left-padding;
+			margin-bottom: 1px;
+
+			.is-active & {
+				max-height: 500px;
+				padding: $accordion-padding;
+                padding-left: $accordion-left-padding;                
+				overflow-y: auto;
+			}
+		}
+
