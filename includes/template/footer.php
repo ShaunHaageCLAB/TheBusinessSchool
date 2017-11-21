@@ -107,10 +107,12 @@
 	</div>
 
 
+	<?php include("footer-chatbar.php"); ?>
+	<?php include("footer-enquiries.php"); ?>
+	<?php include("footer-search.php"); ?>
 </footer>
 
 
-<?php include("footer-enquiries.php"); ?>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"></script>
 <script type="text/javascript" src="scripts/scripts.min.js"></script>

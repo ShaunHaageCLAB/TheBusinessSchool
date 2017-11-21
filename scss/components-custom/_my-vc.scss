@@ -1,0 +1,28 @@
+.myvc__item {
+    box-shadow: 5px 5px 5px #eee;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+    .myvc__thumbnail {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .myvc__excerpt {
+        overflow: hidden;
+        padding-right: 20px;
+    }
+
+        .myvc__title {
+            color: #0082A1;
+            background: url('../img/myvc-logo.gif') no-repeat left bottom;
+            padding: 20px 0 0 60px;
+        }
+
+@media (max-width: $screen-sm-max) {
+    .myvc__thumbnail {
+        display: none;
+    }
+
+}        

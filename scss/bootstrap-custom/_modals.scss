@@ -9,7 +9,7 @@
 
 // Kill the scroll on the body
 .modal-open {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 // Container that the modal scrolls within
@@ -127,7 +127,7 @@
   top: -9999px;
   width: 50px;
   height: 50px;
-  overflow: scroll;
+  //  overflow: scroll;
 }
 
 // Scale up the modal
@@ -146,5 +146,19 @@
 }
 
 @media (min-width: $screen-md-min) {
-  .modal-lg { width: $modal-lg; }
+  .modal-lg { 
+    width: 80%;
+    max-width: $modal-lg;
+  }
+}
+
+.modal-fullscreen {
+  background: $white;
+  .modal-dialog {}
+
+  .modal-content {
+    box-shadow: none;
+    border: none;
+    padding-top: 50px;
+  }
 }

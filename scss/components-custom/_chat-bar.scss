@@ -1,0 +1,38 @@
+// Chat Bar
+// ----------------------------------------------------------------
+
+@media (max-width: $screen-xs-max) {
+	.chatbar__wrapper {
+		display: none;
+	}
+}
+
+
+@media (min-width: $screen-sm-min) {
+    .chatbar__wrapper {
+        position: relative;
+        position: fixed;
+        z-index: $zindex-chatbar;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #e9e9e9;
+        border-top: solid 1px $gray;
+        text-align: center;
+        height: $chatbar-height;
+        line-height: $chatbar-height - 5px;
+        vertical-align: middle;
+
+        p {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .form-group {
+            width: 22%;
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}
