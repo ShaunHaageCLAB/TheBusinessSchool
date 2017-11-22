@@ -24,6 +24,8 @@
 
 body {
 	overflow: auto;
+    min-width: 0;
+    height: auto;
 }
 input[type=button], input[type=reset], input[type=submit], button {
 	min-width: 0;

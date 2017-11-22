@@ -11,7 +11,7 @@
                 <span class="mega__title h2 block">
                     The IIE
 				</span>
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					Sub Title
                 </span>
 			</a>
@@ -21,7 +21,7 @@
                 <span class="mega__title h2 block">
                     About The Business School
 				</span>
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					Sub Title
                 </span>
 			</a>
@@ -31,7 +31,7 @@
                 <span class="mega__title h2 block">
                     Short Learning FAQ's
 				</span>
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					Sub Title
                 </span>
 			</a>
@@ -41,7 +41,7 @@
                 <span class="mega__title h2 block">
                     How to register
 				</span>
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					Sub Title
                 </span>
 			</a>

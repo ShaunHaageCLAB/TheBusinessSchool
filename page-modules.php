@@ -224,7 +224,7 @@
     <h1 class="text-center">View Our brochures online</h1>
 
     <div class="row baseline-md">
-        <div class="col-sm-3 text-center">
+        <div class="col-xs-6 col-sm-3 text-center">
             <a href="#">
                 <img src="images/brochures/imgEBrochure1.jpg" alt="" class="baseline-xs">                
                 <span class="btn btn-primary">
@@ -233,7 +233,7 @@
                 </span>
             </a>
         </div>
-        <div class="col-sm-3 text-center">
+        <div class="col-xs-6 col-sm-3 text-center">
             <a href="#">
                 <img src="images/brochures/imgEBrochure2.jpg" alt="" class="baseline-xs">                
                 <span class="btn btn-primary">
@@ -242,7 +242,7 @@
                 </span>
             </a>
         </div>
-        <div class="col-sm-3 text-center">
+        <div class="col-xs-6 col-sm-3 text-center">
             <a href="#">
                 <img src="images/brochures/imgEBrochure3.jpg" alt="" class="baseline-xs">                
                 <span class="btn btn-primary">
@@ -251,7 +251,7 @@
                 </span>
             </a>
         </div>
-        <div class="col-sm-3 text-center">
+        <div class="col-xs-6 col-sm-3 text-center">
             <a href="#">
                 <img src="images/brochures/imgEBrochure4.jpg" alt="" class="baseline-xs">                
                 <span class="btn btn-primary">

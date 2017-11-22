@@ -2,7 +2,7 @@ var BS = {
     config : {
 
     },  
-    init : function() { 
+    init : function($) { 
 
         var $cache = {
             body:           $('body'),
@@ -37,22 +37,12 @@ var BS = {
 		});
 
 
-		// Toggle Search form
+
+		// Chat bar toggle button
 		// -----------------------------------------------------------
-		$cache.header.on('click', '.js-toggle-search', function () {
-			$cache.body.toggleClass('has-search-active');
-			return false;
-		});
-
-
-
-		// Back to top
-		// -----------------------------------------------------------
-		$cache.footer.on('click', '.js-btn-back-to-top', function (event) {
-			var target = $(this.hash);
-			$('html, body').animate({
-				scrollTop: target.offset().top
-			}, 500);
+        $cache.footer.on('click', '.js-show-callback-form', function () {
+            $cache.footer.find('.js-call-me').removeAttr('hidden');
+            $('.js-call-message').attr('hidden', true);
 
 			event.preventDefault();
 		});
@@ -138,4 +128,4 @@ var BS = {
 };
 
 
-$(document).ready(BS.init());
+$(document).ready(BS.init(jQuery));

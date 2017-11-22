@@ -245,7 +245,7 @@ $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-border-focus:             $lime !default;
 
 //** Placeholder text color
 $input-color-placeholder:        #999 !default;
@@ -314,17 +314,18 @@ $dropdown-caret-color:           #000 !default;
 //
 // Note: These variables are not generated into the Customizer.
 
-$zindex-slideshow-arrows:  1000 !default;
-$zindex-dropdown:          1000 !default;
-$zindex-popover:           1060 !default;
-$zindex-tooltip:           1070 !default;
-$zindex-navbar-fixed:      1030 !default;
-$zindex-modal-background:  1040 !default;
-$zindex-modal:             1050 !default;
+$zindex-slideshow-arrows:   1000 !default;
+$zindex-dropdown:           1000 !default;
+$zindex-popover:            1020 !default;
+$zindex-tooltip:           1030 !default;
+$zindex-menu-main: 		     1050 !default;
+$zindex-menu-toggle:        1060 !default;
 $zindex-navbar:            1050 !default;
+$zindex-chatbar:            1050 !default;
+$zindex-navbar-fixed:       1050 !default;
+$zindex-modal-background:  1070 !default;
+$zindex-modal:             1090 !default;
 
-$zindex-menu-main: 		   	1050 !default;
-$zindex-menu-toggle:    	1060 !default;
 
 
 //== Media queries breakpoints
@@ -400,18 +401,22 @@ $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
 
+//== Chat Bar
+//
+//##
+$chatbar-height: 50px;
+
+
 
 //== Navbar
 //
 //##
 
 // Basics of a navbar
-// Basics of a navbar
 $header-infobar-height:            47px !default; 
 $header-height:                    100px !default; 
 $header-height-reduced:            60px !default; 
 $header-height-mobile:             80px !default; 
-
 $navbar-height:                    30px !default; 
 
 
@@ -669,7 +674,7 @@ $modal-header-border-color:   #e5e5e5 !default;
 //** Modal footer border color
 $modal-footer-border-color:   $modal-header-border-color !default;
 
-$modal-lg:                    900px !default;
+$modal-lg:                    1024px !default;
 $modal-md:                    600px !default;
 $modal-sm:                    300px !default;
 

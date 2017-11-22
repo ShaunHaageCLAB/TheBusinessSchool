@@ -38,6 +38,12 @@
                     </a>
                 </li>
                 <li class="subnav__item is-active">
+                    <a class="subnav__link" href="page-myvc.php">
+                        <span class="h2 baseline-none block">My VC</span>
+                        <span class="block baseline-none"></span>
+                    </a>
+                </li>
+                <li class="subnav__item is-active">
                     <a class="subnav__link" href="page-programme-single.php">
                         <span class="h2 baseline-none block">Programme</span>
                         <span class="block baseline-none">About, requirements, details for a single offered programme</span>

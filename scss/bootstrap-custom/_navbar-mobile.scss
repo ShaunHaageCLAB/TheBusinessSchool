@@ -32,15 +32,18 @@ body {
 
 .navbar-primary {
 	position: fixed;
+	z-index: $zindex-menu-main;
 	top: $header-height-mobile;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	height: 100vh;
+
+	height: calc(100vh - #{$header-height-mobile});
 	width: 100vw;
-	z-index: $zindex-menu-main;
+
 	transition: all 200ms $transition;
 	transform: translate3d(100%, 0, 0);
+	overflow-x: hidden;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	background: $white;
@@ -119,14 +122,11 @@ body {
 		display: block;
 	}
 }
-
-
-		.level-1-list,
-		.level-2-list,
-		.level-3-list  {
-			transition: all 200ms $transition;
-		}
-
+	.level-1-list,
+	.level-2-list,
+	.level-3-list  {
+		transition: all 200ms $transition;
+	}
 
 	.navbar-primary {
 		&[data-menu='2'] .level-1-list {

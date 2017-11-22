@@ -1,3 +1,26 @@
+// Search
+// --------------------------------------------------
+.search-field-wrapper {}
+
+.form-control-large-search {
+    font-size: 580%;
+    border: none;
+    float: left;
+    width: 90%;
+    height: 150px;
+}
+
+.btn-search-button {
+    float: left;
+    width: 10%;
+    padding: 0;
+    height: 150px;
+    &:hover {
+        background: transparent;
+        color: $yellow;
+    }
+}
+
 // Navbars
 // --------------------------------------------------
 .site-header {}
@@ -35,7 +58,7 @@
 .mega__title {
     text-transform: capitalize;
     color: $white;
-    margin: 0 0 10px;
+    margin: 0 0 5px;
 }
 .mega__subtitle {
     color: $white;

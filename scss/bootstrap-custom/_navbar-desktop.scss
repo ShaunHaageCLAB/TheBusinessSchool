@@ -81,26 +81,48 @@ body {
 
 
 
+// Search
+// ----------------------------------------------
+.toggle__search {
+	display: block;
+    line-height: $navbar-height;
+    padding: 0 15px;
+	font-size: 30px;
+	&:hover {
+		background: none;		
+	}		
+}
+
 // Primary navbar
 // ----------------------------------------------
 .navbar-primary {
     background-color: $navbar-default-bg;
 
 	.navbar-nav {
-		> li {
+		> .level-1-item,
+		> .toggle__search-wrapper {
             float: left;
             height: $header-height;
             padding-top: 35px;
 		}
-		> li > a {
+
+		> .level-1-item > a {
 			background-color: $navbar-default-link-bg;
 			color: $navbar-default-link-color;
         }
         
-		> li:hover > a {
+		> .level-1-item:hover > a {
 			background-color: $navbar-default-link-hover-bg;
 			color: $navbar-default-link-hover-color;
 		}
+		.toggle__search {
+			color: $yellow;		
+			&:hover {
+				background: none;
+				color: $black;
+			}			
+		}
+
 	}
 
     > .is-active > a {
