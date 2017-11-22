@@ -1,16 +1,23 @@
 $programmes_margin_small: 10px;
 
 .programmes__menu {
-    margin: 0 -10px !important;
+    margin: 0 -#{$programmes_margin_small} 40px -#{$programmes_margin_small} !important;
     font-size: 0;
 }
 
     .programmes__item {
-        width: 33%;
-        padding: 0 5px 10px 5px;
+        
+        padding: 0 5px $programmes_margin_small 5px;
         font-size: $font-size-base;
         vertical-align: top;
+		@media (max-width: $screen-xs-max) {
+			width: 100%;
+		}	
+		@media (min-width: $screen-sm-min) {
+			width: 33%;
+		}	
     }
+
 
         .programmes__link {
             display: block;
@@ -35,13 +42,16 @@ $programmes_margin_small: 10px;
         }
 
             .programmes__thumbnail {
+				display: block;
+				margin: 0 auto;
                 margin-bottom: $programmes_margin_small;
             }
 
-            .programmes__header {
-                min-height: 10rem;
-
-            }
+			@media (min-width: $screen-sm-min) {
+				.programmes__header {
+					min-height: 10rem;
+				}
+			}	
                 .programmes__title {
                     margin-bottom: $programmes_margin_small;
                 }

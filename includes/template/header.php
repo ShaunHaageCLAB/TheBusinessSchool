@@ -41,7 +41,7 @@
 	<nav class="navbar-wrapper">
 		<div class="container relative">
 			
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="index.php">
 				<img class="navbar-brand-logo" src="img/tbs_logo.png" alt="The Business School Logo">
 			</a>
 
@@ -54,22 +54,22 @@
 			<div class="navbar navbar-primary" id="site-navigation" data-menu='1'>
 				<ul class="navbar-nav level-1-list">
 					<li class="level-1-item">
-						<a class="level-1-link / js-has-children" href="#">About Us</a>
+						<a class="level-1-link / js-has-children" href="page-modules.php">About Us</a>
 						<?php include("includes/dropdown/about-us-megamenu.php"); ?>
 					</li>
 					<li class="level-1-item">
-						<a class="level-1-link / js-has-children" href="#">Programmes</a>					
+						<a class="level-1-link / js-has-children" href="page-programme-single.php">Programmes</a>					
 						<?php include("includes/dropdown/programmes.php"); ?>
 						
 					</li>
 					<li class="level-1-item">
-						<a class="level-1-link / js-has-children" href="#">Find A Campus</a>
+						<a class="level-1-link / js-has-children" href="page-campus.php">Find A Campus</a>
 						<?php include("includes/dropdown/campuses.php"); ?>
 					</li>
 
-					<li class="level-1-item"><a  class="level-1-link" href="#">News &amp; Articles</a></li>
-					<li class="level-1-item"><a  class="level-1-link" href="#">My VC</a></li>
-					<li class="level-1-item"><a  class="level-1-link" href="#">Contacts</a></li>
+					<li class="level-1-item"><a  class="level-1-link" href="page-news.php">News &amp; Articles</a></li>
+					<li class="level-1-item"><a  class="level-1-link" href="page-myvc.php">My VC</a></li>
+					<li class="level-1-item"><a  class="level-1-link" href="page-campus.php">Contacts</a></li>
 
 					<li class="toggle__search-wrapper">
 						<a href="#" class="toggle__search js-toggle-search"  data-toggle="modal" data-target="#modal-search">

@@ -11,7 +11,7 @@
 				<span class="mega__title h2 block">
 					Durban North
 				</span>	
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					KwaZulu Natal
                 </span>
 			</a>
@@ -21,7 +21,7 @@
 				<span class="mega__title h2 block">
 					Durban Westville
 				</span>	
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					KwaZulu Natal
                 </span>
 			</a>
@@ -31,7 +31,7 @@
 				<span class="mega__title h2 block">
 					Pietermaritzburg
 				</span>	
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					KwaZulu Natal
                 </span>
 			</a>
@@ -41,7 +41,7 @@
 				<span class="mega__title h2 block">
 					Cape town
 				</span>	
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					Western Cape
                 </span>
 			</a>
@@ -51,7 +51,7 @@
 				<span class="mega__title h2 block">
 					Port Elizabeth
 				</span>	
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					Eastern Cape
                 </span>
 			</a>
@@ -61,7 +61,7 @@
 				<span class="mega__title h2 block">
 					Waterfall - Midrand
 				</span>	
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					Gauteng
                 </span>
 			</a>
@@ -71,7 +71,7 @@
 				<span class="mega__title h2 block">
 					Pretoria
 				</span>	
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					Gauteng
                 </span>
 			</a>
@@ -81,7 +81,7 @@
 				<span class="mega__title h2 block">
 					Sandton
 				</span>	
-				<span class="mega__title h5-alt block">
+				<span class="mega__subtitle h5-alt block">
 					Gauteng
                 </span>
 			</a>

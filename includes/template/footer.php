@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="row box-white box-padded">
 				
-				<div class="col-md-6">
+				<div class="col-sm-8 col-md-6">
 					<h3 class="h4-alt text-green">The Business School</h3>
 					<p>The Business School at Varsity College offers ambitious working adults the opportunity to build on their skills
 						with convenient part-time study. You can choose from a variety of world class programmes, that won’t impact
@@ -15,7 +15,7 @@
 						and hand-picked partners.</p>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-sm-4 col-md-3">
 					<h3 class="h4-alt text-green">Find a campus</h3>
 					<ul>
 						<li>
@@ -45,7 +45,7 @@
 					</ul>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-sm-12 col-md-3">
 					<h3 class="h4-alt text-green">Mailing list</h3>
 
 					<p>
@@ -65,7 +65,7 @@
 					</div>
 
 
-					<ol class="menu-horz-inline">
+					<ol class="menu-horz-inline text-center">
 						<li>
 							<a href="https://www.facebook.com/BusinessSchoolVC" target="_blank">
 								<img src="img/fb-icon.gif" alt="Facebook" />

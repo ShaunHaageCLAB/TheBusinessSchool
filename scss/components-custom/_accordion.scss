@@ -39,9 +39,9 @@ $accordion-left-padding: 40px;
 			.accordion__icon {
                 position: absolute;
                 left: 10px;
-                top: 0;
+				top: 3px;				
 				@include fa-icon();
-				font-size: 24px;
+				font-size: 20px;
 				padding: 5px $accordion-padding 0 0;
 				color: $white;
 				
@@ -51,7 +51,10 @@ $accordion-left-padding: 40px;
 				.is-active &:before {
 					content: $fa-var-chevron-circle-up; 
                     color: $gray-darker; 
-				}				
+				}		
+				@media (max-width: $screen-xs-max) {
+					top: 10px;
+				}		
 			}
 
         .accordion__panel {
