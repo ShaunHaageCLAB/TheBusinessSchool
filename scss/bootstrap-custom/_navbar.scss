@@ -7,14 +7,16 @@
     border: none;
     float: left;
     width: 90%;
-    height: 150px;
+	height: 150px;
+	background: transparent;
 }
 
 .btn-search-button {
     float: left;
     width: 10%;
     padding: 0;
-    height: 150px;
+	height: 150px;
+	background: transparent;
     &:hover {
         background: transparent;
         color: $yellow;
@@ -36,7 +38,7 @@
 }
 
 .level-1-link {
-    text-transform: uppercase;
+    text-transform: uppercase; 
     font-weight: bold;
     display: block;
     text-align: center;
@@ -69,8 +71,9 @@
 
 // Pretty Colours
 .mega__item {
-    &:nth-of-type(2),
-    &:nth-of-type(6)  {
+	$colour_count : 4;	
+
+    &:nth-of-type(#{$colour_count}n + 2)  {
         .mega__link {
             background-color: $yellow;
             &:hover {
@@ -78,8 +81,7 @@
             }
         }
     }
-    &:nth-of-type(3),
-    &:nth-of-type(7) {
+    &:nth-of-type(#{$colour_count}n + 3) {
         .mega__link {
             background-color: $lime;
             &:hover {
@@ -87,8 +89,7 @@
             }
         }
     }
-    &:nth-of-type(4),
-    &:nth-of-type(8) {
+    &:nth-of-type(#{$colour_count}n + 4) {
         .mega__link {
             background-color: $red;
             &:hover {
@@ -96,8 +97,7 @@
             }
         }
     }
-    &:nth-of-type(5),
-    &:nth-of-type(9) {
+    &:nth-of-type(#{$colour_count}n + 5) {
         .mega__link {
             background-color: $orange;
             &:hover {

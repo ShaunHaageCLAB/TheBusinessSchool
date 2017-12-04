@@ -66,6 +66,9 @@ input[type=button], input[type=reset], input[type=submit], button {
 	.footer__disclaimer {
 		border: solid 1px $gray;
 		border-width: 1px 0;
+		p {
+			line-height: 1.8;
+		}
 	}
 }
 
@@ -82,6 +85,19 @@ input[type=button], input[type=reset], input[type=submit], button {
     }
 }
 
+.list__menu {
+	margin: 0;
+	padding: 0 0 0 15px;
+	color: #c80b0e;
+	line-height: 2;
+}
+
+.list__link {
+	color: #7ba4a8;
+	&:hover {
+		color: darken(#7ba4a8, 10%)
+	}
+}
 
 
 

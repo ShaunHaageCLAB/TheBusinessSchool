@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6,
   line-height: $headings-line-height;
   color: $headings-color;
   margin: 0;
+  letter-spacing: 0;
 
   small,
   .small {
@@ -26,7 +27,8 @@ h1, h2, h3, h4, h5, h6,
 
 .h1-alt, .h2-alt, .h3-alt, .h4-alt, .h5-alt, .h6-alt {
   font-family: $font-family-sans-serif;	
-  font-weight: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 h1, .h1, .h1-alt,
@@ -73,12 +75,10 @@ h6, .h6, .h6-alt {
 // -------------------------
 
 p {
-  	margin: 0 0 ($line-height-computed);
-	  line-height: 1.8; 
-  	// font-weight: 600;
-//   letter-spacing: 1px;
-//   line-height: 30px;
-
+	margin: 0 0 ($line-height-computed);
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 2;
 }
 
 .lead {

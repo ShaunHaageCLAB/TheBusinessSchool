@@ -7,6 +7,9 @@
 }
 	.infobar__message {
 		line-height: $header-infobar-height;
+		a {
+			color: $brand-primary;
+		}
 	}
 
 	.utility__menu {
@@ -220,10 +223,11 @@ $menu-spacing: 16px;
     overflow: hidden;
     padding: 0 $menu-spacing/2;
 	
-    .level-2-item {                
+    .level-2-item,
+	.level-2-campus {                
         float: left;
         margin: 0 $menu-spacing/2 $menu-spacing $menu-spacing/2;
-    }            
+    }          
 }
 
 
@@ -237,6 +241,9 @@ $menu-spacing: 16px;
 .megamenu-2-col .level-2-item {
     width: calc(50% - #{$menu-spacing});                    
 }            
+.megamenu-2-col .level-2-campus {
+    width: calc(50% - #{$menu-spacing});                    
+}            
 
 
 // Text and link styles
@@ -244,3 +251,132 @@ $menu-spacing: 16px;
     padding: 15px;
     transition: 200ms all $transition;
 }
+
+
+
+// Campuses Drop Down Menu
+// =======================================================	
+
+
+// Map sprite
+$campus-sprite-w: 90px;
+$campus-sprite-h: 90px;
+.campus__sprite {
+	display: block;
+	background: url('../img/campuses.gif') no-repeat;
+	background-size: #{$campus-sprite-w * 4} #{$campus-sprite-h * 2};
+	width: $campus-sprite-w;
+	height: $campus-sprite-h;
+}
+
+	.campus__sprite-capetown {
+		background-position: 0 0;
+	}
+	.campus__sprite-durban {
+		background-position: -#{$campus-sprite-w} 0;
+	}
+	.campus__sprite-pmb {
+		background-position: -#{$campus-sprite-w * 2} 0;
+	}
+	.campus__sprite-pe {
+		background-position: -#{$campus-sprite-w * 3} 0;
+	}
+
+	.campus__sprite-waterfall {
+		background-position: 0 -#{$campus-sprite-h};
+	}
+	.campus__sprite-sandton {
+		background-position: -#{$campus-sprite-w} -#{$campus-sprite-h};
+	}
+	.campus__sprite-pretoria {
+		background-position: -#{$campus-sprite-w * 2} -#{$campus-sprite-h};
+	}
+	.campus__sprite-westville {
+		background-position: -#{$campus-sprite-w * 3} -#{$campus-sprite-h};
+	}
+
+
+// Pretty Colours
+.mega__item {
+	$colour_count : 4;
+
+    &:nth-of-type(#{$colour_count}n + 1)  {        
+		.mega__title-campus {
+			color: $yellow;
+		}
+		&:hover {
+			background-color: $yellow;
+		}
+    }
+    &:nth-of-type(#{$colour_count}n + 2) {        
+		.mega__title-campus {
+			color: $green;
+		}
+		&:hover {
+			background-color: $green;
+		}        
+    }
+    &:nth-of-type(#{$colour_count}n + 3) {        
+		.mega__title-campus {
+			color: $red;
+		}
+		&:hover {
+			background-color: $red;
+		}        
+    }
+    &:nth-of-type(#{$colour_count}n + 4) {        
+		.mega__title-campus {
+			color: $orange;
+		}
+		&:hover {
+			background-color: $orange;
+		}        
+    }
+}	
+
+
+.mega__campus,
+.campus__detail  {
+	display: block;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.mega__title-campus,
+.mega__subtitle-campus {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.mega__subtitle-campus {
+	color: $gray;	
+}
+
+.campus__detail {
+	font-size: 1.2rem;
+	color: $gray;
+	margin-bottom: 5px;
+	font-weight: bold;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+.level-2-campus {
+	padding: 5px;
+	&:hover {
+		.mega__campus,
+		.mega__subtitle-campus,
+		.mega__title-campus,
+		.campus__detail {
+			color: $white;
+		}
+	}
+	.campus__sprite {
+		float: left;
+		margin-right: 20px;
+	}
+}
+

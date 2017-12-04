@@ -5,14 +5,18 @@
 
 <div class="container / content__wrapper">
 
-    <h1>IIE Accounting Software</h1>
-
-    <?php include("includes/programmes/buttons-register.php"); ?>
+	<div class="row">
+		<header class="page__header col-md-8 col-md-push-4">
+			<h1>IIE Accounting Software</h1>
+			<?php include("includes/programmes/buttons-register.php"); ?>
+		</header>
+	</div>
 
     <div class="row">
         <?php include("includes/template/sidebar-programmes.php"); ?>
 
         <div class="col-sm-12 col-md-8 col-lg-8">
+    		
             <div class="panel__wrapper">
                 <?php include("includes/programmes/tabs-menu.php"); ?>
                 <?php include("includes/programmes/tabs-content.php"); ?>

@@ -4,6 +4,7 @@
 <?php include("includes/sharepoint/header.php"); ?>
 
 <div class="container / content__wrapper">         
+
     <header class="news__header">
         <h1>Managing a business environment</h1>    
         <span class="h4-alt text-red block baseline-xs">10 May 2017</span>

@@ -4,22 +4,25 @@
 <?php include("includes/sharepoint/header.php"); ?>
 
 <div class="container / content__wrapper">
-    <p class="pull-right">
-        <a href="" class="btn btn-orange">
-            <i class="fa fa-pencil"></i>
-            Register Now
-        </a>
-    </p>
-            
-    <h1>Durban North</h1>
-    <h2 class="h3-alt text-grey">KwaZulu Natal</h2>
 
-
+	<div class="row">
+		<header class="page__header col-md-8 col-md-push-4">
+		<h1>Durban North</h1>
+    	<h2 class="h3-alt text-grey">KwaZulu Natal</h2>
+	</header>
+	</div>
 
     <div class="row">
         <?php include("includes/template/sidebar-campuses.php"); ?>
 
         <div class="col-sm-12 col-md-8 col-lg-8">
+			<p class="pull-right">
+				<a href="" class="btn btn-orange">
+					<i class="fa fa-pencil"></i>
+					Register Now
+				</a>
+			</p>    		
+
 
             <div class="row">
                 <div class="col-sm-6">
@@ -87,7 +90,7 @@
 
         </div>
     </div>
-</div>
+</v>
 
 
 <?php include("includes/sharepoint/footer.php"); ?>
