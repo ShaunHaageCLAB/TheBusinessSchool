@@ -1,13 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * proxima-nova:
+ *   - http://typekit.com/eulas/00000000000000003b9b093b
+ *   - http://typekit.com/eulas/00000000000000003b9b093a
+ *   - http://typekit.com/eulas/00000000000000003b9b0934
+ *   - http://typekit.com/eulas/00000000000000003b9b0935
+ *
+ * © 2009-2017 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2017-11-27 19:03:51 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=mls3ivp&ht=tk&f=139.140.175.176&a=8174287&app=typekit&e=css");
+
+@font-face {
+	font-family: $font-proxima;
+	src: url("https://use.typekit.net/af/c85e2e/00000000000000003b9b093b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),
+		url("https://use.typekit.net/af/c85e2e/00000000000000003b9b093b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),
+		url("https://use.typekit.net/af/c85e2e/00000000000000003b9b093b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-style:normal;
+	font-weight:700;
+}
+
+// @font-face {
+// 	font-family: $font-proxima;
+// 	src: url("https://use.typekit.net/af/15a97f/00000000000000003b9b093a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),
+// 		url("https://use.typekit.net/af/15a97f/00000000000000003b9b093a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),
+// 		url("https://use.typekit.net/af/15a97f/00000000000000003b9b093a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+// 	font-style:italic;
+// 	font-weight:700;
+// }
+
+@font-face {
+	font-family: $font-proxima;
+	src: url("https://use.typekit.net/af/03ff77/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
+		url("https://use.typekit.net/af/03ff77/00000000000000003b9b0934/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),
+		url("https://use.typekit.net/af/03ff77/00000000000000003b9b0934/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-style:normal;
+	font-weight:400;
+}
+
+// @font-face {
+// 	font-family: $font-proxima;
+// 	src: url("https://use.typekit.net/af/d0b1d4/00000000000000003b9b0935/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),
+// 		url("https://use.typekit.net/af/d0b1d4/00000000000000003b9b0935/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),
+// 		url("https://use.typekit.net/af/d0b1d4/00000000000000003b9b0935/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+// 	font-style:italic;
+// 	font-weight:400;
+// }
 
 @font-face {
     font-family: #{$font-bodoni};
     font-weight: normal;
-    src: url('../fonts/bodoni/bauerbbl.woff2') format('woff2'), url('../fonts/bodoni/BauerBodoniBT-BoldItalic.woff') format('woff'), url('../fonts/bodoni/bauerbbl.ttf') format('truetype');
+	src: url('../fonts/bodoni/bauerbbl.woff2') format('woff2'),
+	url('../fonts/bodoni/BauerBodoniBT-BoldItalic.woff') format('woff'),
+	url('../fonts/bodoni/bauerbbl.ttf') format('truetype');
 }
 
 @font-face {
     font-family: #{$font-bodoni};
     font-weight: bold;
-    src: url('../fonts/bodoni/bauerbbd.woff2') format('woff2'), url('../fonts/bodoni/BauerBodoniBT-Bold.woff') format('woff'), url('../fonts/bodoni/bauerbbd.ttf') format('truetype');
+	src: url('../fonts/bodoni/bauerbbd.woff2') format('woff2'),
+	url('../fonts/bodoni/BauerBodoniBT-Bold.woff') format('woff'),
+	url('../fonts/bodoni/bauerbbd.ttf') format('truetype');
 }
+
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');

@@ -29,7 +29,10 @@
         }
 
         .form-group {
-            width: 22%;
+			width: 22%;
+			input, select {
+				background: $white;
+			}
             .btn {
                 width: 100%;
             }

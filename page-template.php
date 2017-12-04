@@ -4,8 +4,13 @@
 <?php include("includes/sharepoint/header.php"); ?>
 
 <div class="container / content__wrapper">
-            
-    <h1>Headline - H1</h1>
+
+	<div class="row">
+		<header class="page__header col-md-8 col-md-push-4">
+    	<h1>Headline - H1</h1>
+		</header>
+	</div>
+
 
     <div class="row">
         <?php include("includes/template/sidebar.php"); ?>

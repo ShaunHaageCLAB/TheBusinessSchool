@@ -1,6 +1,6 @@
 <div class="level-2-wrapper">
 
-	<ul class="level-2-list level-2-megamenu megamenu-4-col">
+	<ul class="level-2-list level-2-megamenu megamenu-2-col">
 		<li class="level-2-item menu-back-item">
 			<a href="#" class="js-menu-back / level-2-link">
 				Go Back

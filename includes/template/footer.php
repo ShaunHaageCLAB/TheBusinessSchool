@@ -5,7 +5,7 @@
 			<div class="row box-white box-padded">
 				
 				<div class="col-sm-8 col-md-6">
-					<h3 class="h4-alt text-green">The Business School</h3>
+					<h3 class="h4-alt text-green text-uppercase">The Business School</h3>
 					<p>The Business School at Varsity College offers ambitious working adults the opportunity to build on their skills
 						with convenient part-time study. You can choose from a variety of world class programmes, that won’t impact
 						on your work hours. </p>
@@ -16,37 +16,37 @@
 				</div>
 
 				<div class="col-sm-4 col-md-3">
-					<h3 class="h4-alt text-green">Find a campus</h3>
-					<ul>
+					<h3 class="h4-alt text-green text-uppercase">Find a campus</h3>
+					<ul class="list__menu">
 						<li>
-							<a href="/campuses/durban-north">Durban North</a>
+							<a class="list__link" href="/campuses/durban-north">Durban North</a>
 						</li>
 						<li>
-							<a href="/campuses/durban-westville">Durban Westville</a>
+							<a class="list__link" href="/campuses/durban-westville">Durban Westville</a>
 						</li>
 						<li>
-							<a href="/campuses/pietermaritzburg">Pietermaritzburg</a>
+							<a class="list__link" href="/campuses/pietermaritzburg">Pietermaritzburg</a>
 						</li>
 						<li>
-							<a href="/campuses/cape-town">Cape Town</a>
+							<a class="list__link" href="/campuses/cape-town">Cape Town</a>
 						</li>
 						<li>
-							<a href="/campuses/port-elizabeth">Port Elizabeth</a>
+							<a class="list__link" href="/campuses/port-elizabeth">Port Elizabeth</a>
 						</li>
 						<li>
-							<a href="/campuses/waterfall">Waterfall - Midrand</a>
+							<a class="list__link" href="/campuses/waterfall">Waterfall - Midrand</a>
 						</li>
 						<li>
-							<a href="/campuses/pretoria">Pretoria</a>
+							<a class="list__link" href="/campuses/pretoria">Pretoria</a>
 						</li>
 						<li>
-							<a href="/campuses/sandton">Sandton</a>
+							<a class="list__link" href="/campuses/sandton">Sandton</a>
 						</li>
 					</ul>
 				</div>
 
 				<div class="col-sm-12 col-md-3">
-					<h3 class="h4-alt text-green">Mailing list</h3>
+					<h3 class="h4-alt text-green text-uppercase">Mailing list</h3>
 
 					<p>
 						Sign up for our mailing list to receive latest updates and offers.
@@ -59,7 +59,7 @@
 
 							<button id="btn_subscribe" class="subscribe-submit / btn btn-primary">
 								<span class="visible-xs-inline-block">Submit</span>
-								<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+								<i class="fa fa-check" aria-hidden="true"></i>
 							</button>
 						</div>
 					</div>

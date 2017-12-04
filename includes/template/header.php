@@ -30,7 +30,7 @@
 				</li>
 				<li class="utility__item">
 					<a class="utility__link btn btn-red" href="#"  data-toggle="modal" data-target="#modal-enquiries">
-						<i class="fa fa-info-circle" aria-hidden="true"></i>	
+						<i class="fa fa-pencil" aria-hidden="true"></i>
 						Enquire Now
 					</a>
 				</li>
@@ -62,7 +62,12 @@
 						<?php include("includes/dropdown/programmes.php"); ?>
 						
 					</li>
-					<li class="level-1-item">
+					<li class="level-1-item / visible-md-block visible-lg-block">
+						<a class="level-1-link / js-has-children" href="page-campus.php">Find A Campus</a>
+						<?php include("includes/dropdown/campuses-desktop.php"); ?>
+					</li>
+
+					<li class="level-1-item / visible-xs-block visible-sm-block">
 						<a class="level-1-link / js-has-children" href="page-campus.php">Find A Campus</a>
 						<?php include("includes/dropdown/campuses.php"); ?>
 					</li>
