@@ -5,14 +5,14 @@
 
 		<div class="row baseline-sm">
 
-			<div class="hover-box / col-sm-6">
+			<div class="hover-box / col-sm-6  xs-baseline-sm">
 				<div class="row">
 					<div class="col-xs-3 col-sm-6">
 						<img src="images/12.jpg">						
 					</div>
 					
 					<div class="col-xs-9 col-sm-6">
-						<h3 class="h4-alt">
+						<h3 class="h4-alt xs-baseline-xs">
 							IIE Project Management
 						</h3>
 
@@ -49,14 +49,14 @@
 
 
 
-			<div class="hover-box / col-sm-6">
+			<div class="hover-box / col-sm-6 xs-baseline-sm">
 				<div class="row">
 					<div class="col-xs-3 col-sm-6">
 						<img src="images/16.jpg">
 					</div>
 
 					<div class="col-xs-9 col-sm-6">
-						<h3 class="h4-alt">
+						<h3 class="h4-alt  xs-baseline-xs">
 							IIE Supply Chain &amp; Logistics Management
 						</h3>
 						

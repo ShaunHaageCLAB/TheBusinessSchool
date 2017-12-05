@@ -246,7 +246,7 @@
 
 .baseline-xs,
 .baseline-grid {
-    margin-bottom: $grid-gutter-width;
+    margin-bottom: $grid-gutter-width/2;
 }
 
 .baseline-sm {
@@ -264,7 +264,7 @@
 @media (max-width: $screen-xs-max) {
     .xs-baseline-xs,
     .xs-baseline-grid {
-        margin-bottom: $grid-gutter-width;
+        margin-bottom: $grid-gutter-width/2;
     }
 
     .xs-baseline-sm {

@@ -74,6 +74,9 @@ $accordion-left-padding: 40px;
 				padding: $accordion-padding;
                 padding-left: $accordion-left-padding;                
 				overflow-y: auto;
+				@media (max-width: $screen-xs-max) {
+					max-height: 300vh;
+				}				
 			}
 		}
 

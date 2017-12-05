@@ -171,14 +171,14 @@ input[type=button], input[type=reset], input[type=submit], button {
 	}
 
 	.subnav__item:nth-of-type(#{$colour_count}n + 2) & {		
-		border-color: $lime;
+		border-color: $green;
 		&:before {
-			border-left-color:  $lime;
+			border-left-color:  $green;
 		}
 		&:hover {
-			border-color: $lime-light;
+			border-color: $green-light;
 			&:before {
-				border-left-color:  $lime-light;
+				border-left-color:  $green-light;
 			}
 		}			
 	}

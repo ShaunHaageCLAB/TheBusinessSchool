@@ -83,9 +83,9 @@
     }
     &:nth-of-type(#{$colour_count}n + 3) {
         .mega__link {
-            background-color: $lime;
+            background-color: $green;
             &:hover {
-                background-color: $lime-light;
+                background-color: $green-light;
             }
         }
     }
